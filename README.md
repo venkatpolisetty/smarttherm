@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SmartTherm
 
 SmartTherm is a Windows-first, local PC thermal dashboard. It reuses the existing `ThermalCollector` .NET application and its LibreHardwareMonitor/HWiNFO integrations for real hardware readings, exposes them through a loopback-only Java 21 / Spring Boot API, and presents a React dashboard. It does not make fan, CPU, or other hardware changes.
@@ -141,3 +142,6 @@ dotnet build .\ThermalCollector\ThermalCollector.csproj
 ```
 
 Sensor integration needs Windows hardware and is not fully exercised by unit tests. The prediction and alert tests use isolated test inputs; these values are not part of the production dashboard.
+=======
+# smarttherm
+>>>>>>> origin/main
