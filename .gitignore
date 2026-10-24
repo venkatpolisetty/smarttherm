@@ -1,0 +1,38 @@
+# .NET
+ThermalCollector/bin/
+ThermalCollector/obj/
+ThermalCollector/data/current-reading.json
+ThermalCollector/data/current-reading.json.tmp
+ThermalCollector/data/reading-history.jsonl
+ThermalCollector/data/training_telemetry_*.csv
+telemetry_*.csv
+process_telemetry_*.csv
+
+# Java / Maven
+backend/target/
+backend/data/settings.json
+backend/data/settings.json.tmp
+backend/data/alerts.json
+backend/data/alerts.json.tmp
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Logs and local environment
+*.log
+.env
+
+# Local ML environment and trained model artifacts
+ml-integration/.venv/
+ml-integration/models/
+ml-integration/__pycache__/
+ml-integration/smarttherm_ml/__pycache__/
+ml-integration/tests/__pycache__/

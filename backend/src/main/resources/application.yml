@@ -1,0 +1,28 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+
+spring:
+  application:
+    name: smarttherm
+  jackson:
+    default-property-inclusion: non_null
+
+smarttherm:
+  sensor-file: ${SMARTTHERM_SENSOR_FILE:${user.dir}/ThermalCollector/data/current-reading.json}
+  sensor-history-file: ${SMARTTHERM_SENSOR_HISTORY:${user.dir}/ThermalCollector/data/reading-history.jsonl}
+  settings-file: ${SMARTTHERM_SETTINGS_FILE:${user.dir}/backend/data/settings.json}
+  alerts-file: ${SMARTTHERM_ALERTS_FILE:${user.dir}/backend/data/alerts.json}
+  poll-ms: 1000
+  collector:
+    enabled: ${SMARTTHERM_COLLECTOR_ENABLED:true}
+    project: ${SMARTTHERM_COLLECTOR_PROJECT:${user.dir}/ThermalCollector/ThermalCollector.csproj}
+  ml:
+    enabled: ${SMARTTHERM_ML_ENABLED:true}
+    base-url: ${SMARTTHERM_ML_URL:http://127.0.0.1:8090}
+    read-timeout-ms: ${SMARTTHERM_ML_READ_TIMEOUT_MS:2000}
+
+logging:
+  level:
+    root: INFO
+    local.smarttherm: INFO

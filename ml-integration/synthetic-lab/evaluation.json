@@ -1,0 +1,212 @@
+{
+  "dataKind": "SYNTHETIC_ONLY_NOT_REAL_WORLD_VALIDATION",
+  "csv": "ml-integration\\synthetic-lab\\synthetic_thermal_data.csv",
+  "rows": 8640,
+  "cpuExamples": 7212,
+  "rejectedRows": {},
+  "rejectedTargets": {
+    "insufficient_feature_history": 24,
+    "missing_ten_minute_target": 1404
+  },
+  "splitCounts": {
+    "train": 4807,
+    "validation": 1201,
+    "test": 1202
+  },
+  "horizonSeconds": 600,
+  "schema": {
+    "matchesCollectorTrainingCsv": true,
+    "columns": [
+      "schemaVersion",
+      "sessionId",
+      "timestamp",
+      "cpuTemperatureC",
+      "gpuTemperatureC",
+      "cpuUtilizationPercent",
+      "cpuClockMhz",
+      "cpuPowerW",
+      "cpuFanSpeedRpm",
+      "gpuUtilizationPercent",
+      "memoryUtilizationPercent",
+      "gpuSensor"
+    ],
+    "timestampFormat": "ISO-8601 UTC with Z suffix",
+    "samplingSeconds": 5,
+    "missingValues": "empty cells; none generated",
+    "temperatureUnit": "C",
+    "utilizationUnit": "percent",
+    "clockUnit": "MHz",
+    "powerUnit": "W",
+    "fanUnit": "RPM"
+  },
+  "quality": {
+    "duplicateSessionTimestamps": 0,
+    "schemaMatches": true,
+    "invalidRows": {},
+    "samplingIntervalSeconds": {
+      "count": 8628,
+      "min": 5.0,
+      "median": 5.0,
+      "max": 5.0
+    },
+    "absoluteCpuTemperatureStepC": {
+      "count": 8628,
+      "min": 0.0,
+      "median": 0.11,
+      "max": 1.12
+    }
+  },
+  "featureDistributions": {
+    "cpuTemperatureC": {
+      "real": {
+        "count": 6,
+        "min": 41.0,
+        "median": 43.0,
+        "max": 43.0
+      },
+      "synthetic": {
+        "count": 8640,
+        "min": 39.3,
+        "median": 51.66,
+        "max": 83.91
+      }
+    },
+    "gpuTemperatureC": {
+      "real": {
+        "count": 825,
+        "min": 38.0,
+        "median": 44.0,
+        "max": 48.0
+      },
+      "synthetic": {
+        "count": 8640,
+        "min": 36.9,
+        "median": 42.18,
+        "max": 61.87
+      }
+    },
+    "cpuUtilizationPercent": {
+      "real": {
+        "count": 4850,
+        "min": 0.24,
+        "median": 19.48,
+        "max": 86.62
+      },
+      "synthetic": {
+        "count": 8640,
+        "min": 1.0,
+        "median": 18.59,
+        "max": 99.09
+      }
+    },
+    "gpuUtilizationPercent": {
+      "real": {
+        "count": 4850,
+        "min": 0.0,
+        "median": 1.31,
+        "max": 73.0
+      },
+      "synthetic": {
+        "count": 8640,
+        "min": 0.0,
+        "median": 9.68,
+        "max": 71.05
+      }
+    },
+    "memoryUtilizationPercent": {
+      "real": {
+        "count": 4850,
+        "min": 37.3,
+        "median": 47.11,
+        "max": 99.21
+      },
+      "synthetic": {
+        "count": 8640,
+        "min": 30.33,
+        "median": 49.77,
+        "max": 88.33
+      }
+    },
+    "cpuClockMhz": {
+      "real": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "synthetic": {
+        "count": 8640,
+        "min": 1515.31,
+        "median": 2191.27,
+        "max": 3812.56
+      }
+    }
+  },
+  "correlations": {
+    "real_cpu_temp_vs_cpu_utilization": -0.922,
+    "synthetic_cpu_temp_vs_cpu_utilization": 0.892,
+    "real_gpu_temp_vs_gpu_utilization": -0.032,
+    "synthetic_gpu_temp_vs_gpu_utilization": 0.86
+  },
+  "correlationCaveat": "Real CPU temperature correlation uses only 6 readings and is not statistically meaningful; clock frequency is absent from all parsed real records.",
+  "featureNames": [
+    "temperature_current_c",
+    "temperature_mean_30s_c",
+    "temperature_mean_60s_c",
+    "temperature_mean_300s_c",
+    "temperature_min_60s_c",
+    "temperature_max_60s_c",
+    "temperature_slope_30s_c_per_min",
+    "temperature_slope_300s_c_per_min",
+    "cpu_utilization_percent",
+    "cpu_utilization_mean_60s_percent",
+    "cpu_clock_mhz",
+    "cpu_clock_mean_60s_mhz",
+    "gpu_utilization_percent",
+    "gpu_utilization_mean_60s_percent",
+    "memory_utilization_percent"
+  ],
+  "baseline": {
+    "validation": {
+      "mae_c": 7.2044,
+      "rmse_c": 8.6292,
+      "r2": 0.1889
+    },
+    "test": {
+      "mae_c": 1.9817,
+      "rmse_c": 4.9804,
+      "r2": 0.9012
+    }
+  },
+  "candidates": {
+    "GradientBoosting": {
+      "validation": {
+        "mae_c": 5.5318,
+        "rmse_c": 7.7267,
+        "r2": 0.3497
+      },
+      "test": {
+        "mae_c": 1.5467,
+        "rmse_c": 3.1353,
+        "r2": 0.9608
+      }
+    },
+    "XGBoost": {
+      "validation": {
+        "mae_c": 4.5573,
+        "rmse_c": 6.5921,
+        "r2": 0.5267
+      },
+      "test": {
+        "mae_c": 2.7389,
+        "rmse_c": 4.1502,
+        "r2": 0.9314
+      }
+    }
+  },
+  "selectedSyntheticCandidate": "XGBoost",
+  "selectionBasis": "validation RMSE; test split remains held out",
+  "syntheticHoldoutBaselineGate": "FAIL",
+  "artifact": "ml-integration\\synthetic-lab\\artifacts\\synthetic_cpu_model.joblib",
+  "livePromotion": "BLOCKED: synthetic data cannot validate or activate a live thermal model"
+}
