@@ -1,0 +1,33 @@
+Timestamp,ProcessId,ProcessName,CPU_Usage,RAM_Usage_MB,IsForeground,ProcessPath
+2026-10-12 23:44:15,23512,Code,1.31,287.63,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:15,24424,HWiNFO64,1.02,28.79,False,
+2026-10-12 23:44:15,16048,Code,0.96,164.05,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:15,22836,ThermalCollector,0.96,90.98,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-12 23:44:15,17064,Microsoft.VisualStudio.Code.ServiceHost,0.92,147.75,False,c:\Users\Hp\.vscode\extensions\ms-dotnettools.csdevkit-3.40.210-win32-x64\components\vs-green-server\platforms\win32-x64\node_modules\@microsoft\visualstudio-code-servicehost.win32-x64\Microsoft.VisualStudio.Code.ServiceHost.exe
+2026-10-12 23:44:15,19716,dotnet,0.57,69.82,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-12 23:44:15,13812,Code,0.55,82.06,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:15,15544,dotnet,0.20,149.88,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-12 23:44:15,20164,Microsoft.CodeAnalysis.LanguageServer,0.14,428.75,False,c:\Users\Hp\.vscode\extensions\ms-dotnettools.csharp-2.160.4-win32-x64\.roslyn\Microsoft.CodeAnalysis.LanguageServer.exe
+2026-10-12 23:44:15,19556,dotnet,0.14,55.45,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-12 23:44:21,23512,Code,0.86,283.53,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:21,22836,ThermalCollector,0.78,91.45,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-12 23:44:21,24424,HWiNFO64,0.35,28.79,False,
+2026-10-12 23:44:21,13812,Code,0.16,81.75,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:21,16048,Code,0.12,163.64,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:28,22836,ThermalCollector,0.70,92.87,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-12 23:44:28,24424,HWiNFO64,0.47,28.79,False,
+2026-10-12 23:44:28,13812,Code,0.29,81.90,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:28,23512,Code,0.29,290.11,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:28,16048,Code,0.12,163.60,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:34,23512,Code,1.02,291.48,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:34,22836,ThermalCollector,0.62,88.41,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-12 23:44:34,24424,HWiNFO64,0.58,28.79,False,
+2026-10-12 23:44:34,16048,Code,0.28,163.66,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:34,13788,NVIDIA Share,0.20,31.86,False,C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA Share.exe
+2026-10-12 23:44:34,13812,Code,0.20,81.81,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:41,22836,ThermalCollector,0.65,89.86,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-12 23:44:41,24424,HWiNFO64,0.53,28.79,False,
+2026-10-12 23:44:41,23512,Code,0.47,293.41,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:41,16048,Code,0.36,163.57,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:41,13812,Code,0.26,82.02,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 23:44:41,13788,NVIDIA Share,0.16,31.86,False,C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA Share.exe

@@ -1,0 +1,22 @@
+Timestamp,ProcessId,ProcessName,CPU_Usage,RAM_Usage_MB,IsForeground,ProcessPath
+2026-10-12 00:55:07,21216,dotnet,2.96,74.09,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-12 00:55:07,3784,Microsoft.VisualStudio.Code.ServiceHost,2.20,164.27,False,c:\Users\Hp\.vscode\extensions\ms-dotnettools.csdevkit-3.40.210-win32-x64\components\vs-green-server\platforms\win32-x64\node_modules\@microsoft\visualstudio-code-servicehost.win32-x64\Microsoft.VisualStudio.Code.ServiceHost.exe
+2026-10-12 00:55:07,26112,dotnet,1.83,160.81,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-12 00:55:07,4384,ThermalCollector,0.83,83.90,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0\ThermalCollector.exe
+2026-10-12 00:55:07,13932,dotnet,0.76,41.14,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-12 00:55:07,20212,Code,0.41,235.66,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:07,25544,Code,0.24,124.12,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:07,21116,Code,0.24,123.66,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:07,2820,Code,0.11,44.45,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:13,4384,ThermalCollector,0.99,87.27,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0\ThermalCollector.exe
+2026-10-12 00:55:13,20212,Code,0.89,219.65,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:13,25544,Code,0.33,121.12,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:13,25012,NVIDIA Share,0.25,12.48,False,C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA Share.exe
+2026-10-12 00:55:13,21116,Code,0.25,123.82,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:20,4384,ThermalCollector,0.88,88.26,False,C:\Users\Hp\ThermalCollector\bin\Debug\net10.0\ThermalCollector.exe
+2026-10-12 00:55:20,20212,Code,0.31,225.32,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:20,25544,Code,0.25,120.54,True,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:20,13512,msedgewebview2,0.21,44.91,False,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\154.0.4258.62\msedgewebview2.exe
+2026-10-12 00:55:20,21116,Code,0.21,123.97,False,C:\Users\Hp\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-12 00:55:20,1264,OverlayHelper,0.13,24.48,False,
+2026-10-12 00:55:20,25012,NVIDIA Share,0.12,12.48,False,C:\Program Files\NVIDIA Corporation\NVIDIA GeForce Experience\NVIDIA Share.exe

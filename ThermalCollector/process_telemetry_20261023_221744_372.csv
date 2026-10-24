@@ -1,0 +1,1039 @@
+Timestamp,ProcessId,ProcessName,CPU_Usage,RAM_Usage_MB,IsForeground,ProcessPath
+2026-10-23 22:17:50,14312,OneDrive,4.39,190.09,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:17:50,20848,OneDrive.Sync.Service,2.54,49.59,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:17:50,10244,ThermalCollector,1.09,87.71,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:17:50,4996,Code,1.05,341.70,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:17:50,11908,Code,0.60,261.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:17:50,8940,dotnet,0.51,144.56,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-23 22:17:50,24360,HWiNFO64,0.43,162.09,False,
+2026-10-23 22:17:50,10696,ChatGPT Classic,0.38,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:17:50,10424,Code,0.34,264.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:17:50,8328,CrossDeviceService,0.30,230.65,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:17:57,14312,OneDrive,4.33,190.26,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:17:57,20848,OneDrive.Sync.Service,3.45,49.63,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:17:57,8448,explorer,2.75,390.00,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:17:57,10244,ThermalCollector,1.16,87.95,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:17:57,4996,Code,0.99,346.89,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:17:57,24360,HWiNFO64,0.46,162.09,False,
+2026-10-23 22:17:57,10696,ChatGPT Classic,0.44,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:17:57,10424,Code,0.17,247.07,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:17:57,8028,Code,0.15,651.20,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:17:57,24428,Code,0.15,416.56,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:03,14312,OneDrive,4.21,190.30,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:03,20848,OneDrive.Sync.Service,2.24,49.60,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:03,8448,explorer,1.42,389.98,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:03,10244,ThermalCollector,0.94,88.42,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:03,10696,ChatGPT Classic,0.50,427.63,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:03,10424,Code,0.34,244.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:03,16428,ChatGPT Classic,0.27,172.50,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:03,8028,Code,0.27,651.22,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:03,24360,HWiNFO64,0.27,162.09,False,
+2026-10-23 22:18:03,4996,Code,0.19,342.44,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:09,8448,explorer,2.40,389.98,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:09,4996,Code,1.35,336.60,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:09,20848,OneDrive.Sync.Service,1.29,49.61,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:09,10244,ThermalCollector,0.95,88.72,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:09,10424,Code,0.49,244.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:09,10696,ChatGPT Classic,0.49,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:09,16428,ChatGPT Classic,0.40,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:09,8028,Code,0.34,651.31,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:09,14312,OneDrive,0.27,190.14,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:09,24360,HWiNFO64,0.27,162.09,False,
+2026-10-23 22:18:15,14312,OneDrive,5.07,191.32,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:15,20848,OneDrive.Sync.Service,2.99,56.04,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:15,8448,explorer,1.85,389.97,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:15,13880,Code,1.47,126.22,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:15,4996,Code,1.12,337.76,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:15,16192,Code,1.09,319.25,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:15,10244,ThermalCollector,1.03,89.35,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:15,11908,Code,0.88,266.28,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:15,10424,Code,0.61,244.66,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:15,10696,ChatGPT Classic,0.61,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:21,14312,OneDrive,6.39,191.17,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:21,8448,explorer,2.60,389.98,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:21,20848,OneDrive.Sync.Service,1.76,56.46,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:21,10244,ThermalCollector,1.01,89.42,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:21,11908,Code,0.80,262.68,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:21,10696,ChatGPT Classic,0.73,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:21,8028,Code,0.52,652.96,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:21,24360,HWiNFO64,0.25,162.11,False,
+2026-10-23 22:18:21,10424,Code,0.23,244.66,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:21,4996,Code,0.23,345.10,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:28,14312,OneDrive,6.48,194.29,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:28,20848,OneDrive.Sync.Service,1.77,56.41,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:28,8448,explorer,1.35,389.97,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:28,10244,ThermalCollector,0.97,91.38,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:28,4996,Code,0.90,346.29,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:28,10696,ChatGPT Classic,0.67,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:28,8028,Code,0.46,648.99,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:28,24360,HWiNFO64,0.32,162.11,False,
+2026-10-23 22:18:28,8980,Code,0.21,181.19,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:28,10424,Code,0.21,244.56,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:34,14312,OneDrive,5.40,191.30,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:34,8448,explorer,5.36,390.33,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:34,20848,OneDrive.Sync.Service,2.84,56.93,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:34,4996,Code,1.60,371.98,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:34,16192,Code,1.41,277.44,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:34,10244,ThermalCollector,1.26,91.42,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:34,11908,Code,0.82,263.84,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:34,10424,Code,0.67,282.79,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:34,10696,ChatGPT Classic,0.59,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:34,24360,HWiNFO64,0.55,162.11,False,
+2026-10-23 22:18:40,14312,OneDrive,10.78,190.29,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:40,20848,OneDrive.Sync.Service,1.85,56.93,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:40,4996,Code,1.77,353.52,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:40,10244,ThermalCollector,0.94,91.38,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:40,10696,ChatGPT Classic,0.67,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:40,2540,svchost,0.51,44.20,False,C:\WINDOWS\system32\svchost.exe
+2026-10-23 22:18:40,11908,Code,0.51,262.59,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:40,8028,Code,0.47,648.88,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:40,24360,HWiNFO64,0.41,162.11,False,
+2026-10-23 22:18:40,10424,Code,0.26,266.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:46,14312,OneDrive,6.85,191.25,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:46,8448,explorer,3.02,390.57,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:46,20848,OneDrive.Sync.Service,1.47,56.80,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:46,4996,Code,1.17,357.84,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:46,10244,ThermalCollector,1.05,91.39,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:46,24360,HWiNFO64,0.52,162.11,False,
+2026-10-23 22:18:46,15716,chrome,0.48,300.42,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:18:46,10696,ChatGPT Classic,0.40,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:46,8028,Code,0.25,648.91,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:46,1956,chrome,0.23,133.12,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:18:53,14312,OneDrive,6.08,190.29,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:53,20848,OneDrive.Sync.Service,1.80,56.88,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:53,11908,Code,1.44,255.94,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:53,8448,explorer,1.42,390.59,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:53,10244,ThermalCollector,1.02,90.37,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:53,24360,HWiNFO64,0.63,162.11,False,
+2026-10-23 22:18:53,10696,ChatGPT Classic,0.42,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:53,8980,Code,0.25,182.26,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:53,10424,Code,0.23,262.20,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:53,4996,Code,0.21,360.73,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:59,14312,OneDrive,4.17,190.36,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:18:59,8448,explorer,3.45,390.60,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:18:59,20848,OneDrive.Sync.Service,2.43,56.90,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:18:59,4996,Code,1.85,355.48,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:59,10244,ThermalCollector,1.00,90.43,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:18:59,24360,HWiNFO64,0.48,162.11,False,
+2026-10-23 22:18:59,8028,Code,0.39,651.29,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:59,10696,ChatGPT Classic,0.37,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:18:59,24428,Code,0.27,420.38,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:18:59,8980,Code,0.21,182.55,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:05,14312,OneDrive,4.47,190.36,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:05,20848,OneDrive.Sync.Service,2.67,57.18,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:05,8448,explorer,2.59,390.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:05,10244,ThermalCollector,0.90,90.45,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:05,11908,Code,0.73,259.15,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:05,24360,HWiNFO64,0.52,162.11,False,
+2026-10-23 22:19:05,10696,ChatGPT Classic,0.38,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:05,10424,Code,0.35,262.21,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:05,4996,Code,0.21,357.38,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:05,16428,ChatGPT Classic,0.19,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:11,8448,explorer,2.12,390.59,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:11,20848,OneDrive.Sync.Service,2.06,57.16,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:11,4996,Code,0.97,352.98,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:11,10244,ThermalCollector,0.95,90.44,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:11,10424,Code,0.61,262.13,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:11,24360,HWiNFO64,0.53,162.11,False,
+2026-10-23 22:19:11,10696,ChatGPT Classic,0.47,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:11,14312,OneDrive,0.34,190.23,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:11,16428,ChatGPT Classic,0.23,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:11,8328,CrossDeviceService,0.21,230.60,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:19:17,14312,OneDrive,4.28,190.41,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:17,20848,OneDrive.Sync.Service,3.57,57.17,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:17,4996,Code,1.37,355.86,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:17,10244,ThermalCollector,0.91,89.37,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:17,24360,HWiNFO64,0.80,162.11,False,
+2026-10-23 22:19:17,8448,explorer,0.78,392.73,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:17,10696,ChatGPT Classic,0.51,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:17,10424,Code,0.49,262.13,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:17,16428,ChatGPT Classic,0.44,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:17,8028,Code,0.27,651.41,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:24,14312,OneDrive,4.07,190.39,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:24,20848,OneDrive.Sync.Service,2.81,57.18,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:24,8448,explorer,2.00,393.11,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:24,4996,Code,0.91,352.82,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:24,10244,ThermalCollector,0.82,89.40,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:24,24360,HWiNFO64,0.70,162.11,False,
+2026-10-23 22:19:24,10424,Code,0.57,262.11,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:24,20000,chrome,0.49,242.74,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:19:24,10696,ChatGPT Classic,0.40,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:24,16428,ChatGPT Classic,0.27,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:30,8448,explorer,3.11,393.17,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:30,20848,OneDrive.Sync.Service,1.65,57.18,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:30,4996,Code,1.06,356.60,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:30,10244,ThermalCollector,1.00,89.37,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:30,24360,HWiNFO64,0.78,162.11,False,
+2026-10-23 22:19:30,10424,Code,0.61,262.11,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:30,8328,CrossDeviceService,0.55,238.08,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:19:30,10696,ChatGPT Classic,0.51,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:30,11908,Code,0.49,259.95,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:30,16428,ChatGPT Classic,0.36,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:36,14312,OneDrive,4.05,194.29,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:36,20848,OneDrive.Sync.Service,1.93,57.14,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:36,8448,explorer,1.33,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:36,10244,ThermalCollector,0.85,89.40,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:36,24360,HWiNFO64,0.62,162.11,False,
+2026-10-23 22:19:36,10696,ChatGPT Classic,0.58,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:36,10424,Code,0.48,262.12,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:36,8028,Code,0.29,651.16,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:36,4996,Code,0.27,359.60,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:36,16428,ChatGPT Classic,0.12,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:42,20848,OneDrive.Sync.Service,2.45,57.02,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:42,8448,explorer,2.43,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:42,10244,ThermalCollector,1.08,89.40,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:42,4996,Code,0.80,353.13,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:42,10696,ChatGPT Classic,0.67,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:42,24360,HWiNFO64,0.57,162.11,False,
+2026-10-23 22:19:42,416,brave,0.46,188.87,False,C:\Users\venka\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+2026-10-23 22:19:42,14312,OneDrive,0.40,190.25,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:42,10424,Code,0.36,263.31,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:42,8028,Code,0.34,651.20,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:48,14312,OneDrive,4.00,194.30,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:48,20848,OneDrive.Sync.Service,2.23,56.93,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:48,4996,Code,1.24,354.25,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:48,8448,explorer,1.15,393.70,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:48,10244,ThermalCollector,1.07,89.77,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:48,10696,ChatGPT Classic,0.93,428.39,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:48,24360,HWiNFO64,0.80,162.09,False,
+2026-10-23 22:19:48,8028,Code,0.45,651.22,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:48,10424,Code,0.33,262.21,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:48,8980,Code,0.23,181.70,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:55,8448,explorer,2.54,393.71,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:19:55,20848,OneDrive.Sync.Service,2.06,56.93,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:19:55,10696,ChatGPT Classic,1.08,427.73,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:19:55,11908,Code,1.02,259.09,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:55,10244,ThermalCollector,0.98,89.75,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:19:55,4996,Code,0.83,350.72,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:55,24360,HWiNFO64,0.56,162.09,False,
+2026-10-23 22:19:55,14312,OneDrive,0.40,190.24,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:19:55,8028,Code,0.33,651.23,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:19:55,10424,Code,0.25,256.28,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:01,14312,OneDrive,4.40,190.41,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:01,20848,OneDrive.Sync.Service,2.31,56.95,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:01,8448,explorer,1.28,393.72,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:01,10244,ThermalCollector,0.99,89.73,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:01,24360,HWiNFO64,0.73,162.09,False,
+2026-10-23 22:20:01,4996,Code,0.59,351.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:01,8328,CrossDeviceService,0.54,239.86,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:20:01,10696,ChatGPT Classic,0.38,427.69,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:01,10424,Code,0.36,256.30,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:01,8028,Code,0.19,651.27,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:07,14312,OneDrive,4.13,190.38,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:07,8448,explorer,3.03,393.72,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:07,20848,OneDrive.Sync.Service,2.63,56.98,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:07,4996,Code,0.78,353.11,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:07,10244,ThermalCollector,0.76,89.73,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:07,24360,HWiNFO64,0.63,162.09,False,
+2026-10-23 22:20:07,8328,CrossDeviceService,0.38,237.10,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:20:07,10696,ChatGPT Classic,0.27,427.69,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:07,8980,Code,0.21,182.64,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:07,10424,Code,0.19,256.24,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:13,14312,OneDrive,4.35,190.40,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:13,8448,explorer,3.52,393.70,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:13,20848,OneDrive.Sync.Service,2.34,57.00,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:13,4996,Code,1.05,357.65,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:13,10244,ThermalCollector,0.79,89.79,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:13,11908,Code,0.66,259.91,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:13,24360,HWiNFO64,0.49,162.09,False,
+2026-10-23 22:20:13,10696,ChatGPT Classic,0.32,427.69,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:13,10424,Code,0.28,256.21,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:13,15008,Code,0.11,126.85,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:19,14312,OneDrive,3.77,193.21,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:19,20848,OneDrive.Sync.Service,1.47,57.02,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:19,8448,explorer,1.03,393.70,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:19,10244,ThermalCollector,0.95,90.68,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:19,24360,HWiNFO64,0.59,162.09,False,
+2026-10-23 22:20:19,10424,Code,0.46,256.17,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:19,16428,ChatGPT Classic,0.34,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:19,8328,CrossDeviceService,0.32,237.74,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:20:19,10696,ChatGPT Classic,0.27,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:19,24428,Code,0.27,425.59,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:26,14312,OneDrive,4.06,190.30,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:26,20848,OneDrive.Sync.Service,1.82,57.02,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:26,8448,explorer,1.40,393.62,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:26,4996,Code,1.08,355.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:26,10244,ThermalCollector,0.95,90.65,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:26,16428,ChatGPT Classic,0.49,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:26,24360,HWiNFO64,0.47,162.09,False,
+2026-10-23 22:20:26,10696,ChatGPT Classic,0.38,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:26,10424,Code,0.36,256.17,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:26,8028,Code,0.25,651.47,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:32,8448,explorer,2.64,393.62,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:32,20848,OneDrive.Sync.Service,2.53,57.05,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:32,10244,ThermalCollector,0.86,90.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:32,4996,Code,0.70,352.63,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:32,10696,ChatGPT Classic,0.57,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:32,11908,Code,0.48,259.20,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:32,10424,Code,0.46,256.18,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:32,24360,HWiNFO64,0.46,162.09,False,
+2026-10-23 22:20:32,8028,Code,0.34,649.94,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:32,16428,ChatGPT Classic,0.32,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:38,14312,OneDrive,4.22,190.36,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:38,20848,OneDrive.Sync.Service,2.06,57.05,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:38,8448,explorer,1.61,393.62,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:38,4996,Code,1.38,352.55,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:38,10244,ThermalCollector,0.91,91.09,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:38,24360,HWiNFO64,0.78,162.09,False,
+2026-10-23 22:20:38,10696,ChatGPT Classic,0.68,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:38,10424,Code,0.42,256.19,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:38,8028,Code,0.36,649.82,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:38,8328,CrossDeviceService,0.32,236.36,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:20:44,8448,explorer,2.71,393.64,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:44,20848,OneDrive.Sync.Service,1.46,57.06,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:44,4996,Code,0.83,357.19,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:44,10244,ThermalCollector,0.80,91.08,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:44,10696,ChatGPT Classic,0.76,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:44,24360,HWiNFO64,0.57,162.09,False,
+2026-10-23 22:20:44,8028,Code,0.49,650.40,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:44,8328,CrossDeviceService,0.28,236.36,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:20:44,10424,Code,0.25,256.18,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:44,14312,OneDrive,0.23,190.29,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:50,14312,OneDrive,4.32,190.42,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:50,20848,OneDrive.Sync.Service,2.76,57.10,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:50,8448,explorer,1.52,393.64,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:50,10244,ThermalCollector,1.26,94.14,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:50,11908,Code,0.92,257.43,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:50,8328,CrossDeviceService,0.71,246.55,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:20:50,24360,HWiNFO64,0.58,162.09,False,
+2026-10-23 22:20:50,10696,ChatGPT Classic,0.51,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:50,8028,Code,0.32,650.41,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:50,4996,Code,0.32,359.47,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:56,14312,OneDrive,4.29,190.34,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:20:56,8448,explorer,3.58,393.64,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:20:56,20848,OneDrive.Sync.Service,3.24,57.11,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:20:56,10244,ThermalCollector,0.99,94.30,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:20:56,4996,Code,0.97,358.23,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:56,24360,HWiNFO64,0.82,162.07,False,
+2026-10-23 22:20:56,10424,Code,0.44,255.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:56,10696,ChatGPT Classic,0.44,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:20:56,8028,Code,0.29,650.50,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:20:56,8328,CrossDeviceService,0.23,240.48,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:21:02,14312,OneDrive,4.42,190.36,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:02,20848,OneDrive.Sync.Service,3.01,57.09,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:02,8448,explorer,2.97,393.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:02,4996,Code,1.03,354.91,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:02,10244,ThermalCollector,0.93,94.34,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:02,24360,HWiNFO64,0.78,162.07,False,
+2026-10-23 22:21:02,10696,ChatGPT Classic,0.48,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:02,8028,Code,0.32,650.60,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:02,10424,Code,0.27,264.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:02,8980,Code,0.23,182.39,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:09,14312,OneDrive,3.97,190.32,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:09,8448,explorer,3.44,393.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:09,20848,OneDrive.Sync.Service,2.65,57.11,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:09,4996,Code,1.10,352.67,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:09,10244,ThermalCollector,0.87,94.99,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:09,11908,Code,0.81,260.07,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:09,24360,HWiNFO64,0.66,162.07,False,
+2026-10-23 22:21:09,10696,ChatGPT Classic,0.36,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:09,10424,Code,0.30,255.96,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:09,8028,Code,0.17,650.61,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:15,8448,explorer,3.03,393.67,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:15,4996,Code,2.52,368.56,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:15,20848,OneDrive.Sync.Service,2.15,57.12,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:15,10244,ThermalCollector,0.98,95.21,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:15,24360,HWiNFO64,0.62,162.09,False,
+2026-10-23 22:21:15,10424,Code,0.49,267.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:15,10696,ChatGPT Classic,0.49,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:15,8980,Code,0.36,181.78,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:15,8028,Code,0.36,650.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:21,14312,OneDrive,4.11,190.23,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:21,20848,OneDrive.Sync.Service,2.45,57.12,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:21,8448,explorer,1.45,393.67,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:21,4996,Code,1.20,372.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:21,10244,ThermalCollector,0.95,96.54,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:21,24428,Code,0.60,386.89,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:21,24360,HWiNFO64,0.56,162.09,False,
+2026-10-23 22:21:21,10424,Code,0.48,277.96,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:21,10696,ChatGPT Classic,0.33,427.68,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:21,8028,Code,0.25,652.29,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:27,14312,OneDrive,4.20,190.36,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:27,20848,OneDrive.Sync.Service,2.84,57.05,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:27,8448,explorer,2.41,393.68,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:27,10244,ThermalCollector,0.86,97.89,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:27,4996,Code,0.72,367.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:27,8328,CrossDeviceService,0.66,239.91,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:21:27,24360,HWiNFO64,0.64,162.09,False,
+2026-10-23 22:21:27,16428,ChatGPT Classic,0.49,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:27,10424,Code,0.47,272.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:27,20000,chrome,0.27,242.11,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:21:33,14312,OneDrive,4.02,190.34,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:33,8448,explorer,2.41,393.67,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:33,20848,OneDrive.Sync.Service,2.05,56.93,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:33,10244,ThermalCollector,0.82,96.17,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:33,11908,Code,0.59,261.45,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:33,16428,ChatGPT Classic,0.55,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:33,24360,HWiNFO64,0.42,162.09,False,
+2026-10-23 22:21:33,10424,Code,0.34,262.70,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:33,10696,ChatGPT Classic,0.34,427.63,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:33,8028,Code,0.25,651.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:40,8448,explorer,2.85,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:40,20848,OneDrive.Sync.Service,2.40,56.95,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:40,4996,Code,1.11,364.52,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:40,10244,ThermalCollector,0.94,96.14,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:40,10696,ChatGPT Classic,0.55,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:40,8328,CrossDeviceService,0.49,247.13,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:21:40,2696,StartMenuExperienceHost,0.34,195.58,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:21:40,8028,Code,0.32,651.62,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:40,24360,HWiNFO64,0.30,162.09,False,
+2026-10-23 22:21:40,16428,ChatGPT Classic,0.28,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:46,14312,OneDrive,4.10,190.23,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:46,8448,explorer,1.54,393.70,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:46,20848,OneDrive.Sync.Service,1.37,57.01,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:46,4996,Code,1.27,352.24,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:46,10244,ThermalCollector,0.91,96.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:46,10696,ChatGPT Classic,0.57,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:46,8028,Code,0.42,651.65,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:46,11160,MicrosoftStartFeedProvider,0.40,50.25,False,C:\Program Files\WindowsApps\Microsoft.StartExperiencesApp_1.398.2.0_x64__8wekyb3d8bbwe\MicrosoftStartFeedProvider\MicrosoftStartFeedProvider.exe
+2026-10-23 22:21:46,15036,msedgewebview2,0.40,93.50,False,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\155.0.4283.62\msedgewebview2.exe
+2026-10-23 22:21:46,24360,HWiNFO64,0.34,162.09,False,
+2026-10-23 22:21:52,14312,OneDrive,4.06,190.38,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:52,8448,explorer,2.90,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:52,20848,OneDrive.Sync.Service,2.67,60.16,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:52,4996,Code,1.08,358.50,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:52,10244,ThermalCollector,0.95,96.67,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:52,11908,Code,0.63,258.98,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:52,8028,Code,0.61,651.67,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:52,10696,ChatGPT Classic,0.57,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:52,24360,HWiNFO64,0.42,162.09,False,
+2026-10-23 22:21:52,8328,CrossDeviceService,0.28,240.57,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:21:58,14312,OneDrive,4.07,190.37,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:21:58,8448,explorer,2.84,393.68,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:21:58,20848,OneDrive.Sync.Service,2.50,62.71,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:21:58,4996,Code,1.23,357.76,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:21:58,10244,ThermalCollector,1.02,97.24,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:21:58,8328,CrossDeviceService,0.67,244.11,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:21:58,2696,StartMenuExperienceHost,0.65,197.75,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:21:58,4352,PhoneExperienceHost,0.63,250.00,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:21:58,10696,ChatGPT Classic,0.56,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:21:58,24360,HWiNFO64,0.42,162.09,False,
+2026-10-23 22:22:04,8328,CrossDeviceService,4.63,252.43,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:04,8448,explorer,2.25,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:04,20848,OneDrive.Sync.Service,2.11,62.73,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:04,2696,StartMenuExperienceHost,1.34,197.05,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:22:04,10244,ThermalCollector,0.85,95.27,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:04,4352,PhoneExperienceHost,0.52,247.99,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:22:04,8028,Code,0.48,651.74,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:04,10696,ChatGPT Classic,0.46,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:04,416,brave,0.37,188.17,False,C:\Users\venka\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+2026-10-23 22:22:04,14312,OneDrive,0.29,190.22,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:11,8328,CrossDeviceService,7.57,247.09,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:11,14312,OneDrive,4.35,190.29,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:11,20848,OneDrive.Sync.Service,2.50,62.50,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:11,4996,Code,1.95,354.45,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:11,8448,explorer,1.48,393.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:11,10244,ThermalCollector,1.06,95.27,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:11,11908,Code,0.76,257.89,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:11,10696,ChatGPT Classic,0.40,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:11,24360,HWiNFO64,0.36,162.09,False,
+2026-10-23 22:22:11,8028,Code,0.34,651.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:17,8328,CrossDeviceService,2.93,246.34,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:17,20848,OneDrive.Sync.Service,2.93,62.67,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:17,8448,explorer,2.58,393.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:17,10244,ThermalCollector,0.81,95.73,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:17,4996,Code,0.75,358.39,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:17,24360,HWiNFO64,0.52,162.09,False,
+2026-10-23 22:22:17,10696,ChatGPT Classic,0.35,427.64,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:17,8028,Code,0.29,651.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:17,14312,OneDrive,0.23,190.26,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:17,8980,Code,0.17,181.12,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:23,14312,OneDrive,4.61,190.39,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:23,20848,OneDrive.Sync.Service,2.28,62.59,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:23,4996,Code,1.91,367.98,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:23,8448,explorer,1.76,393.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:23,10244,ThermalCollector,0.82,95.73,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:23,8328,CrossDeviceService,0.44,246.14,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:23,24360,HWiNFO64,0.44,162.09,False,
+2026-10-23 22:22:23,10424,Code,0.36,265.98,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:23,8028,Code,0.29,652.23,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:23,8980,Code,0.27,181.69,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:29,8328,CrossDeviceService,5.99,247.48,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:29,8448,explorer,2.51,393.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:29,20848,OneDrive.Sync.Service,2.51,62.38,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:29,10696,ChatGPT Classic,0.98,429.09,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:29,10244,ThermalCollector,0.98,93.77,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:29,24360,HWiNFO64,0.49,162.09,False,
+2026-10-23 22:22:29,16428,ChatGPT Classic,0.36,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:29,10424,Code,0.30,265.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:29,14312,OneDrive,0.21,190.24,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:29,25032,msedge,0.19,175.66,False,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+2026-10-23 22:22:35,8328,CrossDeviceService,7.66,241.54,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:35,14312,OneDrive,4.47,190.33,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:35,20848,OneDrive.Sync.Service,3.15,62.36,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:35,8448,explorer,1.34,393.61,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:35,4996,Code,1.26,355.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:35,10244,ThermalCollector,1.05,94.30,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:35,24360,HWiNFO64,0.52,162.09,False,
+2026-10-23 22:22:35,16428,ChatGPT Classic,0.48,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:35,11908,Code,0.46,260.48,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:35,10424,Code,0.36,256.11,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:42,14312,OneDrive,4.11,190.35,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:42,8028,Code,2.42,653.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:42,8448,explorer,2.25,393.66,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:42,20848,OneDrive.Sync.Service,1.92,62.39,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:42,10244,ThermalCollector,0.96,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:42,8328,CrossDeviceService,0.92,240.72,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:42,4996,Code,0.71,352.33,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:42,16428,ChatGPT Classic,0.42,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:42,10696,ChatGPT Classic,0.42,428.24,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:42,24360,HWiNFO64,0.35,162.09,False,
+2026-10-23 22:22:48,8448,explorer,2.32,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:48,20848,OneDrive.Sync.Service,2.30,62.24,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:48,4996,Code,1.33,359.73,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:48,10244,ThermalCollector,0.88,94.52,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:48,10696,ChatGPT Classic,0.59,428.24,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:48,24360,HWiNFO64,0.46,162.09,False,
+2026-10-23 22:22:48,8328,CrossDeviceService,0.36,240.59,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:48,16428,ChatGPT Classic,0.36,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:48,8028,Code,0.36,648.87,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:48,14312,OneDrive,0.34,190.33,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:54,14312,OneDrive,4.08,190.38,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:22:54,20848,OneDrive.Sync.Service,2.65,62.29,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:22:54,8448,explorer,1.14,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:22:54,10244,ThermalCollector,0.86,94.52,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:22:54,11908,Code,0.76,260.46,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:54,10696,ChatGPT Classic,0.50,428.24,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:22:54,24360,HWiNFO64,0.44,162.09,False,
+2026-10-23 22:22:54,8028,Code,0.40,646.62,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:22:54,8328,CrossDeviceService,0.34,240.02,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:22:54,16428,ChatGPT Classic,0.19,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:00,8448,explorer,2.59,393.69,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:00,20848,OneDrive.Sync.Service,1.62,62.29,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:00,10244,ThermalCollector,0.89,93.69,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:00,24360,HWiNFO64,0.57,162.09,False,
+2026-10-23 22:23:00,4996,Code,0.55,354.59,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:00,8028,Code,0.53,646.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:00,10696,ChatGPT Classic,0.49,428.31,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:00,16428,ChatGPT Classic,0.32,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:00,14312,OneDrive,0.30,190.22,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:00,8328,CrossDeviceService,0.17,240.02,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:06,14312,OneDrive,4.11,190.36,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:06,20848,OneDrive.Sync.Service,2.96,62.20,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:06,4996,Code,1.24,353.65,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:06,10244,ThermalCollector,0.90,93.69,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:06,8028,Code,0.53,646.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:06,10696,ChatGPT Classic,0.45,428.31,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:06,24360,HWiNFO64,0.34,162.09,False,
+2026-10-23 22:23:06,8328,CrossDeviceService,0.32,241.51,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:06,2696,StartMenuExperienceHost,0.28,198.42,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:23:06,16428,ChatGPT Classic,0.21,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:12,14312,OneDrive,4.33,190.25,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:12,20848,OneDrive.Sync.Service,2.00,62.11,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:12,8448,explorer,1.84,393.66,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:12,11908,Code,0.84,259.66,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:12,4996,Code,0.84,353.01,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:12,10244,ThermalCollector,0.82,94.42,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:12,24360,HWiNFO64,0.55,162.09,False,
+2026-10-23 22:23:12,10696,ChatGPT Classic,0.32,428.31,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:12,8028,Code,0.25,646.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:12,8980,Code,0.21,181.70,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:18,8448,explorer,2.99,393.63,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:18,20848,OneDrive.Sync.Service,2.18,62.13,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:18,4996,Code,1.07,356.87,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:18,10244,ThermalCollector,0.90,94.45,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:18,14312,OneDrive,0.51,191.56,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:18,24360,HWiNFO64,0.49,162.09,False,
+2026-10-23 22:23:18,10696,ChatGPT Classic,0.34,428.21,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:18,8328,CrossDeviceService,0.32,240.43,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:18,8028,Code,0.21,646.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:18,8980,Code,0.13,182.41,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:25,14312,OneDrive,4.35,191.68,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:25,20848,OneDrive.Sync.Service,2.15,61.95,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:25,8448,explorer,1.33,393.63,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:25,8328,CrossDeviceService,1.31,245.80,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:25,4996,Code,0.95,356.95,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:25,10244,ThermalCollector,0.95,95.71,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:25,2696,StartMenuExperienceHost,0.84,199.09,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:23:25,4352,PhoneExperienceHost,0.82,249.27,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:23:25,24360,HWiNFO64,0.51,162.09,False,
+2026-10-23 22:23:25,20000,chrome,0.49,241.23,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:23:31,8328,CrossDeviceService,6.40,250.19,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:31,8448,explorer,2.70,388.74,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:31,20848,OneDrive.Sync.Service,2.31,61.99,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:31,11908,Code,1.00,261.74,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:31,10244,ThermalCollector,1.00,95.72,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:31,24360,HWiNFO64,0.62,162.09,False,
+2026-10-23 22:23:31,4352,PhoneExperienceHost,0.29,249.07,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:23:31,14312,OneDrive,0.27,191.48,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:31,8028,Code,0.17,646.80,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:31,10424,Code,0.12,256.18,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:37,8328,CrossDeviceService,7.88,244.89,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:37,14312,OneDrive,4.15,191.66,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:37,20848,OneDrive.Sync.Service,2.83,61.99,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:37,8448,explorer,1.47,388.75,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:37,11908,Code,1.30,261.73,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:37,10244,ThermalCollector,0.94,95.65,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:37,4996,Code,0.71,355.75,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:37,24360,HWiNFO64,0.69,162.09,False,
+2026-10-23 22:23:37,10424,Code,0.25,256.19,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:37,16428,ChatGPT Classic,0.13,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:43,8328,CrossDeviceService,6.13,244.71,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:43,14312,OneDrive,4.18,191.65,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:43,8448,explorer,3.21,389.07,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:43,20848,OneDrive.Sync.Service,2.06,61.90,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:43,4996,Code,1.43,353.61,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:43,10244,ThermalCollector,0.86,95.62,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:43,24360,HWiNFO64,0.78,162.09,False,
+2026-10-23 22:23:43,16428,ChatGPT Classic,0.61,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:23:43,10424,Code,0.38,256.05,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:43,416,brave,0.31,187.38,False,C:\Users\venka\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+2026-10-23 22:23:50,14312,OneDrive,4.45,191.61,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:23:50,8328,CrossDeviceService,4.41,240.98,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:50,4996,Code,3.15,382.30,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:50,20848,OneDrive.Sync.Service,2.99,61.93,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:50,10424,Code,1.17,267.11,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:50,8448,explorer,1.13,389.10,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:50,10244,ThermalCollector,1.09,95.66,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:50,11908,Code,0.90,258.86,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:50,24360,HWiNFO64,0.86,162.09,False,
+2026-10-23 22:23:50,1956,chrome,0.58,137.00,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:23:56,8328,CrossDeviceService,7.54,241.47,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:23:56,20848,OneDrive.Sync.Service,3.26,61.91,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:23:56,8448,explorer,3.18,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:23:56,10244,ThermalCollector,1.25,98.07,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:23:56,4996,Code,1.05,401.72,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:56,24360,HWiNFO64,0.64,162.09,False,
+2026-10-23 22:23:56,10424,Code,0.53,267.63,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:56,8028,Code,0.47,646.97,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:56,24428,Code,0.39,384.76,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:23:56,8980,Code,0.37,180.79,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:02,14312,OneDrive,4.29,191.61,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:02,8328,CrossDeviceService,4.14,240.23,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:02,20848,OneDrive.Sync.Service,2.76,61.90,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:02,8448,explorer,1.07,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:02,10244,ThermalCollector,0.88,98.07,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:02,24360,HWiNFO64,0.82,162.09,False,
+2026-10-23 22:24:02,4996,Code,0.77,374.43,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:02,8028,Code,0.50,648.00,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:02,10696,ChatGPT Classic,0.42,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:02,16428,ChatGPT Classic,0.17,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:08,14312,OneDrive,4.01,191.59,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:08,8448,explorer,3.18,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:08,20848,OneDrive.Sync.Service,2.95,61.73,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:08,10244,ThermalCollector,0.93,98.05,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:08,4996,Code,0.87,376.14,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:08,8028,Code,0.55,647.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:08,10696,ChatGPT Classic,0.42,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:08,24360,HWiNFO64,0.32,162.09,False,
+2026-10-23 22:24:08,8980,Code,0.23,180.71,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:08,24428,Code,0.23,385.16,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:14,14312,OneDrive,4.14,191.60,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:14,20848,OneDrive.Sync.Service,2.51,61.42,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:14,8448,explorer,1.41,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:14,4996,Code,0.95,378.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:14,10244,ThermalCollector,0.93,98.05,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:14,11908,Code,0.82,261.42,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:14,8328,CrossDeviceService,0.46,239.84,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:14,24360,HWiNFO64,0.44,162.09,False,
+2026-10-23 22:24:14,10696,ChatGPT Classic,0.40,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:14,8028,Code,0.25,647.95,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:21,8448,explorer,2.66,389.14,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:21,20848,OneDrive.Sync.Service,2.16,61.17,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:21,10244,ThermalCollector,0.92,98.12,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:21,24360,HWiNFO64,0.65,162.09,False,
+2026-10-23 22:24:21,10696,ChatGPT Classic,0.40,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:21,8028,Code,0.36,647.98,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:21,416,brave,0.31,188.68,False,C:\Users\venka\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+2026-10-23 22:24:21,14312,OneDrive,0.23,191.45,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:21,8328,CrossDeviceService,0.19,239.45,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:21,4996,Code,0.17,379.46,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:27,14312,OneDrive,4.23,193.04,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:27,20848,OneDrive.Sync.Service,2.16,61.10,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:27,8448,explorer,1.35,389.12,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:27,4996,Code,1.01,379.87,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:27,10244,ThermalCollector,0.91,98.09,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:27,24360,HWiNFO64,0.51,162.09,False,
+2026-10-23 22:24:27,8328,CrossDeviceService,0.27,239.66,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:27,10696,ChatGPT Classic,0.21,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:27,15008,Code,0.17,127.30,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:27,8028,Code,0.15,648.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:33,20848,OneDrive.Sync.Service,2.65,61.12,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:33,8448,explorer,2.32,389.12,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:33,10244,ThermalCollector,0.86,98.06,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:33,11908,Code,0.82,260.72,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:33,4996,Code,0.78,373.84,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:33,24360,HWiNFO64,0.55,162.09,False,
+2026-10-23 22:24:33,8328,CrossDeviceService,0.36,239.36,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:33,14312,OneDrive,0.36,191.46,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:33,10696,ChatGPT Classic,0.36,427.61,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:33,8980,Code,0.13,182.34,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:39,14312,OneDrive,4.31,191.55,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:39,20848,OneDrive.Sync.Service,1.75,60.82,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:39,8448,explorer,1.62,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:39,4996,Code,1.54,356.98,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:39,10244,ThermalCollector,0.85,98.06,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:39,24360,HWiNFO64,0.66,162.09,False,
+2026-10-23 22:24:39,10424,Code,0.19,261.46,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:39,16428,ChatGPT Classic,0.15,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:39,8028,Code,0.15,646.45,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:39,8328,CrossDeviceService,0.13,239.38,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:45,8448,explorer,2.34,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:45,20848,OneDrive.Sync.Service,2.02,60.84,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:45,8328,CrossDeviceService,1.14,246.45,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:45,4352,PhoneExperienceHost,1.07,251.01,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:24:45,4996,Code,1.01,359.62,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:45,10244,ThermalCollector,0.97,94.46,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:45,24360,HWiNFO64,0.84,162.09,False,
+2026-10-23 22:24:45,2696,StartMenuExperienceHost,0.51,199.10,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:24:45,10424,Code,0.48,261.51,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:45,14312,OneDrive,0.44,191.49,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:51,14312,OneDrive,4.10,194.47,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:51,8448,explorer,1.70,389.17,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:51,20848,OneDrive.Sync.Service,1.44,60.29,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:51,8328,CrossDeviceService,1.11,245.84,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:24:51,2696,StartMenuExperienceHost,0.90,198.87,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:24:51,10244,ThermalCollector,0.88,94.46,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:51,24360,HWiNFO64,0.77,162.09,False,
+2026-10-23 22:24:51,11908,Code,0.73,259.05,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:51,16428,ChatGPT Classic,0.44,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:51,10424,Code,0.36,262.52,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:58,14312,OneDrive,4.13,194.46,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:24:58,20848,OneDrive.Sync.Service,2.44,59.93,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:24:58,8448,explorer,1.59,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:24:58,10244,ThermalCollector,0.98,94.46,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:24:58,24360,HWiNFO64,0.81,162.09,False,
+2026-10-23 22:24:58,8028,Code,0.57,646.72,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:58,4996,Code,0.51,359.73,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:24:58,16428,ChatGPT Classic,0.36,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:58,10696,ChatGPT Classic,0.32,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:24:58,8980,Code,0.11,180.52,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:04,14312,OneDrive,4.16,191.58,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:04,8448,explorer,2.96,389.18,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:04,20848,OneDrive.Sync.Service,2.58,59.92,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:04,10696,ChatGPT Classic,1.24,428.20,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:04,4996,Code,0.94,357.32,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:04,10244,ThermalCollector,0.86,94.46,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:04,8028,Code,0.57,646.72,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:04,24360,HWiNFO64,0.57,162.09,False,
+2026-10-23 22:25:04,8328,CrossDeviceService,0.25,243.96,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:04,16428,ChatGPT Classic,0.21,172.51,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:10,8328,CrossDeviceService,11.92,245.74,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:10,8448,explorer,3.25,389.25,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:10,4996,Code,1.25,353.36,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:10,20848,OneDrive.Sync.Service,1.19,59.70,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:10,24360,HWiNFO64,0.98,162.09,False,
+2026-10-23 22:25:10,10244,ThermalCollector,0.96,94.46,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:10,8028,Code,0.59,646.81,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:10,10696,ChatGPT Classic,0.45,428.17,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:10,4352,PhoneExperienceHost,0.40,248.55,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:25:10,14312,OneDrive,0.23,191.48,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:16,8328,CrossDeviceService,14.17,245.40,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:16,14312,OneDrive,4.31,191.58,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:16,20848,OneDrive.Sync.Service,2.94,59.30,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:16,8448,explorer,1.69,389.25,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:16,10244,ThermalCollector,1.02,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:16,4996,Code,0.81,357.66,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:16,24360,HWiNFO64,0.67,162.09,False,
+2026-10-23 22:25:16,10696,ChatGPT Classic,0.56,428.17,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:16,8028,Code,0.46,646.89,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:16,11908,Code,0.38,262.29,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:22,8328,CrossDeviceService,9.41,245.19,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:22,8448,explorer,2.83,389.09,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:22,20848,OneDrive.Sync.Service,2.44,59.18,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:22,10244,ThermalCollector,0.97,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:22,14312,OneDrive,0.39,191.46,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:22,10696,ChatGPT Classic,0.35,428.09,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:22,24360,HWiNFO64,0.31,162.09,False,
+2026-10-23 22:25:22,4996,Code,0.19,362.20,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:22,24428,Code,0.19,387.32,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:22,8980,Code,0.14,182.52,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:29,8328,CrossDeviceService,4.48,242.40,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:29,14312,OneDrive,4.23,191.50,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:29,20848,OneDrive.Sync.Service,1.99,59.00,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:29,8448,explorer,1.28,389.07,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:29,10244,ThermalCollector,0.92,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:29,4996,Code,0.75,362.79,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:29,24360,HWiNFO64,0.67,162.09,False,
+2026-10-23 22:25:29,11908,Code,0.52,260.71,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:29,10696,ChatGPT Classic,0.31,428.09,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:29,8028,Code,0.23,648.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:35,14312,OneDrive,4.44,191.59,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:35,8328,CrossDeviceService,4.33,243.81,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:35,8448,explorer,2.61,389.07,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:35,20848,OneDrive.Sync.Service,2.00,58.75,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:35,10244,ThermalCollector,0.93,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:35,4996,Code,0.74,357.36,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:35,24360,HWiNFO64,0.63,162.09,False,
+2026-10-23 22:25:35,24428,Code,0.17,384.95,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:35,10696,ChatGPT Classic,0.13,428.09,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:35,416,brave,0.13,197.69,False,C:\Users\venka\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+2026-10-23 22:25:41,8328,CrossDeviceService,3.88,241.25,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:41,20848,OneDrive.Sync.Service,3.12,58.32,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:41,8448,explorer,2.80,389.09,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:41,4996,Code,1.43,353.84,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:41,10244,ThermalCollector,0.88,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:41,24360,HWiNFO64,0.57,162.09,False,
+2026-10-23 22:25:41,20000,chrome,0.42,242.77,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:25:41,10696,ChatGPT Classic,0.23,428.09,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:41,14312,OneDrive,0.21,191.46,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:47,8328,CrossDeviceService,4.92,248.88,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:47,14312,OneDrive,4.54,191.60,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:25:47,20848,OneDrive.Sync.Service,3.01,58.18,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:47,4996,Code,1.02,358.43,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:47,10244,ThermalCollector,0.87,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:47,2696,StartMenuExperienceHost,0.81,199.05,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:25:47,11908,Code,0.62,258.50,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:47,10424,Code,0.49,256.20,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:47,16428,ChatGPT Classic,0.32,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:47,24360,HWiNFO64,0.28,162.09,False,
+2026-10-23 22:25:53,8328,CrossDeviceService,9.49,248.57,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:25:53,8448,explorer,3.18,389.09,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:25:53,20848,OneDrive.Sync.Service,2.09,57.98,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:25:53,10244,ThermalCollector,0.99,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:25:53,416,brave,0.49,188.95,False,C:\Users\venka\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+2026-10-23 22:25:53,16428,ChatGPT Classic,0.46,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:53,24360,HWiNFO64,0.42,162.09,False,
+2026-10-23 22:25:53,10424,Code,0.38,256.16,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:25:53,10696,ChatGPT Classic,0.36,427.55,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:25:53,8028,Code,0.34,649.29,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:00,8328,CrossDeviceService,7.76,246.18,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:00,14312,OneDrive,4.17,191.63,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:00,20848,OneDrive.Sync.Service,2.84,57.99,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:00,4996,Code,1.45,356.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:00,8448,explorer,1.14,389.20,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:00,10244,ThermalCollector,1.02,94.33,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:00,24360,HWiNFO64,0.52,162.09,False,
+2026-10-23 22:26:00,8028,Code,0.48,649.38,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:00,16428,ChatGPT Classic,0.39,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:00,10696,ChatGPT Classic,0.35,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:06,8328,CrossDeviceService,4.02,246.38,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:06,8448,explorer,3.60,389.21,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:06,20848,OneDrive.Sync.Service,2.60,57.98,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:06,10244,ThermalCollector,0.98,94.73,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:06,4996,Code,0.83,353.52,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:06,11908,Code,0.65,259.27,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:06,8028,Code,0.52,649.46,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:06,10696,ChatGPT Classic,0.50,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:06,24360,HWiNFO64,0.44,162.09,False,
+2026-10-23 22:26:06,14312,OneDrive,0.31,191.44,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:12,14312,OneDrive,4.24,191.48,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:12,8328,CrossDeviceService,4.07,246.03,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:12,20848,OneDrive.Sync.Service,2.12,57.73,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:12,8448,explorer,1.99,389.19,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:12,4996,Code,1.57,371.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:12,10244,ThermalCollector,0.94,94.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:12,8028,Code,0.59,649.50,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:12,10696,ChatGPT Classic,0.52,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:12,8980,Code,0.44,182.64,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:12,10424,Code,0.44,265.70,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:18,14312,OneDrive,4.05,191.66,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:18,8448,explorer,3.00,389.19,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:18,4996,Code,2.14,370.61,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:18,20848,OneDrive.Sync.Service,2.08,57.55,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:18,10244,ThermalCollector,1.01,94.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:18,24360,HWiNFO64,0.67,162.09,False,
+2026-10-23 22:26:18,8980,Code,0.61,180.54,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:18,10424,Code,0.59,266.80,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:18,8028,Code,0.57,649.52,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:18,10696,ChatGPT Classic,0.48,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:25,8328,CrossDeviceService,15.72,255.79,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:25,8448,explorer,2.77,389.19,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:25,20848,OneDrive.Sync.Service,1.77,57.57,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:25,10244,ThermalCollector,0.85,94.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:25,11908,Code,0.48,258.43,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:25,10696,ChatGPT Classic,0.44,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:25,24360,HWiNFO64,0.33,162.09,False,
+2026-10-23 22:26:25,8028,Code,0.29,650.93,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:25,8980,Code,0.19,180.07,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:25,14312,OneDrive,0.15,191.48,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:31,8328,CrossDeviceService,6.16,255.41,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:31,14312,OneDrive,4.53,191.53,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:31,20848,OneDrive.Sync.Service,2.16,57.34,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:31,8448,explorer,1.69,389.19,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:31,10244,ThermalCollector,1.04,94.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:31,4996,Code,0.95,366.13,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:31,10696,ChatGPT Classic,0.51,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:31,24360,HWiNFO64,0.36,162.09,False,
+2026-10-23 22:26:31,8980,Code,0.19,180.32,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:31,16428,ChatGPT Classic,0.17,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:37,14312,OneDrive,4.38,191.57,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:37,8328,CrossDeviceService,4.08,255.32,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:37,8448,explorer,2.81,389.15,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:37,20848,OneDrive.Sync.Service,2.60,57.26,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:37,4996,Code,1.15,356.24,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:37,10244,ThermalCollector,0.88,94.73,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:37,15036,msedgewebview2,0.36,98.96,False,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\155.0.4283.62\msedgewebview2.exe
+2026-10-23 22:26:37,24360,HWiNFO64,0.25,162.09,False,
+2026-10-23 22:26:37,10696,ChatGPT Classic,0.23,427.75,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:37,8028,Code,0.10,650.70,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:43,8328,CrossDeviceService,4.39,254.42,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:43,8448,explorer,2.97,389.16,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:43,20848,OneDrive.Sync.Service,2.25,57.21,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:43,4996,Code,0.97,358.49,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:43,10244,ThermalCollector,0.91,94.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:43,11908,Code,0.47,258.84,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:43,14312,OneDrive,0.34,191.46,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:43,24360,HWiNFO64,0.32,162.09,False,
+2026-10-23 22:26:43,10696,ChatGPT Classic,0.25,427.70,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:26:43,8028,Code,0.15,650.73,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:49,8328,CrossDeviceService,4.45,255.07,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:49,14312,OneDrive,4.45,192.08,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:26:49,20848,OneDrive.Sync.Service,2.10,57.21,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:49,8448,explorer,1.32,390.07,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:49,10244,ThermalCollector,0.92,94.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:49,24360,HWiNFO64,0.48,162.09,False,
+2026-10-23 22:26:49,10424,Code,0.29,256.23,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:49,16192,Code,0.17,276.42,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:49,8980,Code,0.15,181.71,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:49,4996,Code,0.15,361.84,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:56,8328,CrossDeviceService,4.83,265.89,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:26:56,20848,OneDrive.Sync.Service,3.27,56.68,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:26:56,8448,explorer,2.53,390.08,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:26:56,10244,ThermalCollector,1.14,94.70,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:26:56,4996,Code,1.10,359.59,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:56,2696,StartMenuExperienceHost,0.80,199.53,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:26:56,4352,PhoneExperienceHost,0.80,248.32,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:26:56,10424,Code,0.42,256.23,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:26:56,24360,HWiNFO64,0.34,162.09,False,
+2026-10-23 22:26:56,16428,ChatGPT Classic,0.30,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:02,8328,CrossDeviceService,10.50,262.88,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:02,14312,OneDrive,4.65,191.55,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:02,20848,OneDrive.Sync.Service,3.81,56.18,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:02,10244,ThermalCollector,1.06,95.39,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:02,11908,Code,0.74,259.09,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:02,16428,ChatGPT Classic,0.72,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:02,4996,Code,0.65,357.54,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:02,10424,Code,0.55,256.23,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:02,2696,StartMenuExperienceHost,0.41,199.90,False,C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+2026-10-23 22:27:02,4352,PhoneExperienceHost,0.39,248.25,False,C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe
+2026-10-23 22:27:08,8328,CrossDeviceService,9.12,259.23,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:08,14312,OneDrive,4.41,191.45,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:08,20848,OneDrive.Sync.Service,2.71,56.07,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:08,8448,explorer,2.01,390.09,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:08,4996,Code,1.55,356.89,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:08,10244,ThermalCollector,0.97,95.38,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:08,16428,ChatGPT Classic,0.60,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:08,10696,ChatGPT Classic,0.48,427.66,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:08,24360,HWiNFO64,0.35,162.09,False,
+2026-10-23 22:27:08,8028,Code,0.33,650.85,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:15,8328,CrossDeviceService,12.12,259.21,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:15,20848,OneDrive.Sync.Service,2.74,55.96,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:15,8448,explorer,2.53,390.07,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:15,4996,Code,1.04,359.80,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:15,10244,ThermalCollector,0.96,95.34,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:15,8028,Code,0.57,650.88,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:15,10696,ChatGPT Classic,0.51,427.66,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:15,14312,OneDrive,0.43,191.47,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:15,24360,HWiNFO64,0.27,162.09,False,
+2026-10-23 22:27:15,16428,ChatGPT Classic,0.18,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:21,8328,CrossDeviceService,6.60,258.40,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:21,14312,OneDrive,4.32,192.28,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:21,20848,OneDrive.Sync.Service,2.05,55.92,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:21,8448,explorer,1.37,390.07,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:21,4996,Code,1.30,359.33,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:21,10244,ThermalCollector,0.99,95.34,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:21,11908,Code,0.58,260.14,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:21,10696,ChatGPT Classic,0.58,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:21,8028,Code,0.54,650.90,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:21,24360,HWiNFO64,0.50,162.09,False,
+2026-10-23 22:27:27,20848,OneDrive.Sync.Service,3.31,55.76,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:27,8448,explorer,3.16,390.09,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:27,4996,Code,2.20,393.61,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:27,11908,Code,1.44,259.13,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:27,8328,CrossDeviceService,1.19,258.47,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:27,10244,ThermalCollector,0.95,95.34,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:27,10696,ChatGPT Classic,0.66,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:27,10424,Code,0.62,267.02,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:27,8028,Code,0.53,650.55,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:27,14312,OneDrive,0.39,192.19,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:33,8328,CrossDeviceService,9.41,270.55,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:33,14312,OneDrive,4.46,192.27,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:33,4996,Code,3.88,417.91,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:33,20848,OneDrive.Sync.Service,2.95,55.50,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:33,8448,explorer,1.89,390.09,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:33,10244,ThermalCollector,1.32,95.35,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:33,10424,Code,0.88,268.18,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:33,8980,Code,0.75,182.33,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:33,8028,Code,0.63,650.04,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:33,10696,ChatGPT Classic,0.57,427.61,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:40,8328,CrossDeviceService,9.02,267.58,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:40,8448,explorer,3.40,390.13,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:40,20848,OneDrive.Sync.Service,1.76,55.50,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:40,4996,Code,1.74,387.91,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:40,10244,ThermalCollector,0.86,95.35,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:40,10424,Code,0.62,267.81,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:40,8980,Code,0.48,182.64,True,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:40,14312,OneDrive,0.38,192.18,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:40,10696,ChatGPT Classic,0.34,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:40,24360,HWiNFO64,0.32,162.09,False,
+2026-10-23 22:27:46,14312,OneDrive,4.35,192.32,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:46,8328,CrossDeviceService,4.23,267.54,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:46,20848,OneDrive.Sync.Service,2.39,55.37,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:46,10696,ChatGPT Classic,1.17,428.65,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:46,10244,ThermalCollector,1.07,95.39,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:46,8448,explorer,0.98,390.13,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:46,4996,Code,0.96,386.25,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:46,11908,Code,0.90,258.31,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:46,20000,chrome,0.46,242.66,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-23 22:27:46,24360,HWiNFO64,0.36,162.09,False,
+2026-10-23 22:27:52,8328,CrossDeviceService,7.08,270.33,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:52,8448,explorer,2.69,390.13,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:52,20848,OneDrive.Sync.Service,2.29,55.24,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:52,10244,ThermalCollector,0.96,95.39,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:52,24360,HWiNFO64,0.29,162.09,False,
+2026-10-23 22:27:52,14312,OneDrive,0.27,192.19,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:52,10696,ChatGPT Classic,0.17,428.09,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:27:52,4996,Code,0.15,386.64,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:52,24428,Code,0.15,387.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:52,8028,Code,0.10,650.14,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:59,8328,CrossDeviceService,10.40,270.48,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:27:59,14312,OneDrive,4.44,192.29,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:27:59,20848,OneDrive.Sync.Service,3.12,54.74,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:27:59,8448,explorer,1.30,390.11,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:27:59,10244,ThermalCollector,1.14,94.06,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:27:59,4996,Code,0.78,389.12,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:59,24360,HWiNFO64,0.62,162.09,False,
+2026-10-23 22:27:59,416,brave,0.39,188.44,False,C:\Users\venka\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe
+2026-10-23 22:27:59,10424,Code,0.29,261.68,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:27:59,10696,ChatGPT Classic,0.27,428.16,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:05,8328,CrossDeviceService,12.41,269.41,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:28:05,14312,OneDrive,4.71,192.82,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:28:05,20848,OneDrive.Sync.Service,3.55,54.66,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:28:05,8448,explorer,3.47,390.39,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:28:05,4996,Code,0.94,386.77,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:05,10244,ThermalCollector,0.94,94.07,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:28:05,16428,ChatGPT Classic,0.69,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:05,10424,Code,0.55,262.20,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:05,24360,HWiNFO64,0.53,162.09,False,
+2026-10-23 22:28:05,11908,Code,0.49,259.90,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:11,8328,CrossDeviceService,7.81,269.72,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:28:11,14312,OneDrive,4.42,191.98,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:28:11,20848,OneDrive.Sync.Service,1.98,54.53,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:28:11,8448,explorer,1.59,390.39,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:28:11,10244,ThermalCollector,1.05,94.07,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:28:11,4996,Code,1.03,388.94,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:11,16428,ChatGPT Classic,0.54,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:11,24360,HWiNFO64,0.43,162.09,False,
+2026-10-23 22:28:11,10424,Code,0.33,261.57,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:11,10696,ChatGPT Classic,0.31,428.16,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:18,8328,CrossDeviceService,10.86,267.76,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:28:18,8448,explorer,2.41,390.39,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:28:18,20848,OneDrive.Sync.Service,1.96,58.41,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:28:18,10244,ThermalCollector,0.94,94.07,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:28:18,10696,ChatGPT Classic,0.59,427.68,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:18,4996,Code,0.55,383.16,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:18,8028,Code,0.39,650.52,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:18,24360,HWiNFO64,0.39,162.09,False,
+2026-10-23 22:28:18,16428,ChatGPT Classic,0.37,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:18,14312,OneDrive,0.27,191.97,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:28:24,14312,OneDrive,4.54,191.98,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:28:24,8328,CrossDeviceService,4.37,267.67,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:28:24,20848,OneDrive.Sync.Service,2.66,58.47,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:28:24,10244,ThermalCollector,0.96,94.07,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:28:24,11908,Code,0.84,260.97,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:24,10696,ChatGPT Classic,0.63,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:24,4996,Code,0.57,356.66,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:24,8028,Code,0.54,650.56,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:24,24360,HWiNFO64,0.40,162.09,False,
+2026-10-23 22:28:24,16428,ChatGPT Classic,0.13,172.52,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:30,8328,CrossDeviceService,5.76,273.50,False,C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26082.74.0_x64__cw5n1h2txyewy\CrossDeviceService.exe
+2026-10-23 22:28:30,14312,OneDrive,4.21,194.97,False,C:\Program Files\Microsoft OneDrive\OneDrive.exe
+2026-10-23 22:28:30,20848,OneDrive.Sync.Service,3.15,58.33,False,C:\Program Files\Microsoft OneDrive\26.183.0920.0005\OneDrive.Sync.Service.exe
+2026-10-23 22:28:30,8448,explorer,2.16,388.03,False,C:\WINDOWS\Explorer.EXE
+2026-10-23 22:28:30,10244,ThermalCollector,1.02,94.07,False,C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-23 22:28:30,4996,Code,0.75,356.66,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:30,10696,ChatGPT Classic,0.62,427.62,False,C:\Program Files\WindowsApps\OpenAI.ChatGPT-Desktop_1.2026.190.0_x64__2p2nqsd0c76g0\app\ChatGPT Classic.exe
+2026-10-23 22:28:30,8028,Code,0.54,652.00,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-23 22:28:30,24360,HWiNFO64,0.48,162.09,False,
+2026-10-23 22:28:30,24428,Code,0.15,391.42,False,C:\Users\venka\AppData\Local\Programs\Microsoft VS Code\Code.exe
