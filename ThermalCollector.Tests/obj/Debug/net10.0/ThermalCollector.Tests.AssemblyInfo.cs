@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThermalCollector.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d01e99179d5db9ade5dbad343e832e116f998631")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36cc4571a9625cccb15e3b61cf5baac2765eb5d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThermalCollector.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThermalCollector.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

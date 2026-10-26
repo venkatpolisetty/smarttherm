@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\venka\\OneDrive\\Desktop\\Documents\\BTP\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj": {}
+    "c:\\Users\\rithv\\OneDrive\\Documents\\github\\smarttherm\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\venka\\OneDrive\\Desktop\\Documents\\BTP\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj": {
+    "c:\\Users\\rithv\\OneDrive\\Documents\\github\\smarttherm\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\venka\\OneDrive\\Desktop\\Documents\\BTP\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj",
+        "projectUniqueName": "c:\\Users\\rithv\\OneDrive\\Documents\\github\\smarttherm\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj",
         "projectName": "ThermalCollector.Tests",
-        "projectPath": "C:\\Users\\venka\\OneDrive\\Desktop\\Documents\\BTP\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj",
-        "packagesPath": "C:\\Users\\venka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\venka\\OneDrive\\Desktop\\Documents\\BTP\\ThermalCollector.Tests\\obj\\",
+        "projectPath": "c:\\Users\\rithv\\OneDrive\\Documents\\github\\smarttherm\\ThermalCollector.Tests\\ThermalCollector.Tests.csproj",
+        "packagesPath": "C:\\Users\\rithv\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\rithv\\OneDrive\\Documents\\github\\smarttherm\\ThermalCollector.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\venka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rithv\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
