@@ -90,16 +90,16 @@ class ApiControllerTest {
 
     @Test
     void startsCollectionAndRequestsImmediateTrainingCheck() throws Exception {
-        when(collectorProcessManager.startCollection()).thenReturn(true);
+        when(collectorProcessManager.startThrottleCalibration()).thenReturn(true);
         when(pythonPredictionClient.requestTrainingCheck()).thenReturn(true);
 
         mockMvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post("/api/calibration/start"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.collectorStarted").value(true))
                 .andExpect(jsonPath("$.trainingCheckRequested").value(true))
-                .andExpect(jsonPath("$.message").value(org.hamcrest.Matchers.containsString("Calibration started")));
+                .andExpect(jsonPath("$.message").value(org.hamcrest.Matchers.containsString("throttle calibration requested")));
 
-        verify(collectorProcessManager).startCollection();
+        verify(collectorProcessManager).startThrottleCalibration();
         verify(pythonPredictionClient).requestTrainingCheck();
     }
 

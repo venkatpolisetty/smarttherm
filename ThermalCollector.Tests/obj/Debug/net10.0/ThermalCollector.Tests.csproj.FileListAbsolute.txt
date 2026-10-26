@@ -1,0 +1,15 @@
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\bin\Debug\net10.0\ThermalCollector.Tests.exe
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\bin\Debug\net10.0\ThermalCollector.Tests.deps.json
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\bin\Debug\net10.0\ThermalCollector.Tests.runtimeconfig.json
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\bin\Debug\net10.0\ThermalCollector.Tests.dll
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\bin\Debug\net10.0\ThermalCollector.Tests.pdb
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.AssemblyInfoInputs.cache
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.AssemblyInfo.cs
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.csproj.CoreCompileInputs.cache
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.sourcelink.json
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.dll
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\refint\ThermalCollector.Tests.dll
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.pdb
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ThermalCollector.Tests.genruntimeconfig.cache
+C:\Users\venka\OneDrive\Desktop\Documents\BTP\ThermalCollector.Tests\obj\Debug\net10.0\ref\ThermalCollector.Tests.dll

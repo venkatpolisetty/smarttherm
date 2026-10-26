@@ -7,19 +7,27 @@ using System.Linq;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using LibreHardwareMonitor.Hardware;
 using Hwinfo.SharedMemory;
+using SmartTherm;
 
 class Program
 {
     private const long MaxTrainingFileBytes = 10 * 1024 * 1024;
     private const long MaxTrainingDataBytes = 512 * 1024 * 1024;
+    private const long MaxTelemetryFileBytes = 10 * 1024 * 1024;
+    private const long MaxTelemetryDataBytes = 512 * 1024 * 1024;
     private const int DatasetPruneSamples = 60;
     private const string TrainingCsvHeader =
         "schemaVersion,sessionId,timestamp,cpuTemperatureC,gpuTemperatureC," +
         "cpuUtilizationPercent,cpuClockMhz,cpuPowerW,cpuFanSpeedRpm,gpuUtilizationPercent," +
         "memoryUtilizationPercent,gpuSensor";
     private static volatile bool keepRunning;
+    private static volatile bool calibrationRequested;
+    private static int calibrationActive;
+    private const int ThrottleCalibrationSeconds = 300;
+    private const double CalibrationSafetyAbortC = 95;
 
     // Windows API: identify the process owning the foreground window.
     [DllImport("user32.dll")]
@@ -60,6 +68,8 @@ class Program
 
         string processFile = Path.Combine(
             Environment.CurrentDirectory, $"process_telemetry_{sessionId}.csv");
+        int systemFilePart = 0;
+        int processFilePart = 0;
         string collectorDirectory = Path.Combine(Environment.CurrentDirectory, "ThermalCollector");
         if (!Directory.Exists(collectorDirectory))
             collectorDirectory = Environment.CurrentDirectory;
@@ -67,6 +77,14 @@ class Program
         Directory.CreateDirectory(dataDirectory);
         string currentReadingFile = Path.Combine(dataDirectory, "current-reading.json");
         string readingHistoryFile = Path.Combine(dataDirectory, "reading-history.jsonl");
+        string profileFile = Path.Combine(Environment.CurrentDirectory, "smarttherm_profile.json");
+        string calibrationStatusFile = Path.Combine(dataDirectory, "throttle-calibration-status.json");
+        var throttleAnalyzer = new ThrottleCalibrationAnalyzer();
+        CancellationTokenSource? stressCancellation = null;
+        Task[] stressWorkers = [];
+        Stopwatch? calibrationTimer = null;
+        string calibrationState = "idle";
+        string calibrationMessage = "No throttle calibration has run.";
         string trainingSessionId = Guid.NewGuid().ToString("N");
         StreamWriter? trainingWriter = null;
         int trainingFilePart = 0;
@@ -99,6 +117,9 @@ class Program
                     keepRunning = false;
                     break;
                 }
+                if (command.Equals("calibrate", StringComparison.OrdinalIgnoreCase) &&
+                    Interlocked.CompareExchange(ref calibrationActive, 1, 0) == 0)
+                    calibrationRequested = true;
             }
         });
 
@@ -148,6 +169,9 @@ class Program
                 "RAM_Usage_MB,IsForeground,ProcessPath" +
                 Environment.NewLine);
 
+            PruneCsvFiles(Environment.CurrentDirectory, "telemetry_*.csv", systemFile);
+            PruneCsvFiles(Environment.CurrentDirectory, "process_telemetry_*.csv", processFile);
+
             Console.WriteLine("Telemetry collection started.");
             Console.WriteLine($"System data:  {systemFile}");
             Console.WriteLine($"Process data: {processFile}");
@@ -166,9 +190,23 @@ class Program
             Stopwatch stopwatch = Stopwatch.StartNew();
             double previousTime = stopwatch.Elapsed.TotalSeconds;
             bool processBaselineReady = false;
+            var processSampler = new ProcessSampler();
 
             while (keepRunning)
             {
+                if (calibrationRequested && stressCancellation is null && hardwareReady)
+                {
+                    calibrationRequested = false;
+                    throttleAnalyzer = new ThrottleCalibrationAnalyzer();
+                    stressCancellation = new CancellationTokenSource();
+                    calibrationTimer = Stopwatch.StartNew();
+                    calibrationState = "running";
+                    calibrationMessage = "CPU stress and sensor collection are running.";
+                    stressWorkers = StartCpuStress(stressCancellation.Token);
+                    WriteCalibrationStatus(calibrationStatusFile, calibrationState,
+                        calibrationMessage, null);
+                    Console.WriteLine("Throttle calibration started (maximum 300 seconds).");
+                }
                 if (!hardwareReady)
                 {
                     try
@@ -311,7 +349,49 @@ class Program
                 TryReadHwinfoTemperatures(
                     hwinfoReader,
                     ref cpuTemp,
-                    ref intelGpuTemp);
+                    ref intelGpuTemp,
+                    ref cpuLoad,
+                    ref cpuClockMhz,
+                    ref cpuPowerW,
+                    out bool? hardwareThermalThrottle);
+
+                if (calibrationState == "running")
+                {
+                    var sample = new CpuThermalSample(DateTimeOffset.UtcNow,
+                        !sensorReadFailed && ValidTemperature(cpuTemp) ? cpuTemp : null,
+                        !sensorReadFailed && ValidPercent(cpuLoad) ? cpuLoad : null,
+                        !sensorReadFailed && ValidClock(cpuClockMhz) ? cpuClockMhz : null,
+                        !sensorReadFailed && ValidPower(cpuPowerW) ? cpuPowerW : null,
+                        hardwareThermalThrottle);
+                    throttleAnalyzer.Add(sample);
+
+                    string? abortReason = null;
+                    if (ValidTemperature(cpuTemp) && cpuTemp >= CalibrationSafetyAbortC)
+                        abortReason = $"Safety abort: CPU temperature reached {cpuTemp:F1}°C.";
+                    else if (!ValidTemperature(cpuTemp) || !ValidPercent(cpuLoad) ||
+                             (!ValidClock(cpuClockMhz) && hardwareThermalThrottle is null))
+                        abortReason = "Safety abort: required CPU temperature, load, and usable clock or hardware-throttle readings became unavailable.";
+
+                    bool durationComplete = calibrationTimer?.Elapsed >= TimeSpan.FromSeconds(ThrottleCalibrationSeconds);
+                    if (abortReason is not null || durationComplete)
+                    {
+                        stressCancellation?.Cancel();
+                        try { Task.WaitAll(stressWorkers, TimeSpan.FromSeconds(2)); } catch (AggregateException) { }
+                        var result = throttleAnalyzer.Complete(DateTimeOffset.UtcNow);
+                        SmartThermProfile.Save(profileFile, result);
+                        calibrationState = abortReason is null ? "complete" : "safety_aborted";
+                        calibrationMessage = abortReason ?? (result.EstimatedTemperatureC.HasValue
+                            ? $"Calibration completed: {result.DetectionMethod} at {result.EstimatedTemperatureC:F1}°C ({result.EventCount} event(s))."
+                            : "Calibration completed, but no reliable throttle event was detected.");
+                        WriteCalibrationStatus(calibrationStatusFile, calibrationState,
+                            calibrationMessage, result);
+                        stressCancellation!.Dispose();
+                        stressCancellation = null;
+                        Interlocked.Exchange(ref calibrationActive, 0);
+                        calibrationTimer = null;
+                        Console.WriteLine(calibrationMessage);
+                    }
+                }
 
                 float selectedGpuTemp = !float.IsNaN(gpuTemp)
                     ? gpuTemp
@@ -349,8 +429,16 @@ class Program
                     memoryUtilizationPercent = ValidPercent(ramLoad) ? ramLoad : (float?)null
                 };
                 string serializedReading = JsonSerializer.Serialize(reading);
+                List<ProcessUsage> topConsumerSamples = processSampler.Sample();
+                JsonObject currentPayload = JsonNode.Parse(serializedReading)!.AsObject();
+                currentPayload["topProcesses"] = JsonSerializer.SerializeToNode(topConsumerSamples.Select(process => new
+                {
+                    name = process.Name,
+                    cpuPercent = Math.Round(process.CpuPercent, 1)
+                }));
+                string serializedCurrentPayload = currentPayload.ToJsonString();
                 string temporaryReadingFile = currentReadingFile + ".tmp";
-                File.WriteAllText(temporaryReadingFile, serializedReading);
+                File.WriteAllText(temporaryReadingFile, serializedCurrentPayload);
                 File.Move(temporaryReadingFile, currentReadingFile, true);
 
                 var historyInfo = new FileInfo(readingHistoryFile);
@@ -401,8 +489,15 @@ class Program
                     F(uploadSpeed),
                     F(downloadSpeed));
 
-                File.AppendAllText(
-                    systemFile, systemRow + Environment.NewLine);
+                systemFile = AppendRotatingCsvRow(
+                    Environment.CurrentDirectory, "telemetry", sessionId,
+                    ref systemFilePart, systemFile,
+                    "Timestamp,CPU_Load,CPU_Max_Load,CPU_Temp,CPU_Power_W," +
+                    "CPU_Fan_Speed_RPM,RAM_Load,Intel_GPU_Load,Intel_GPU_Temp," +
+                    "NVIDIA_GPU_Load,NVIDIA_GPU_Temp,GPU_Hotspot,GPU_Memory_Temp," +
+                    "VRAM_Used,GPU_Power,Upload_Speed,Download_Speed",
+                    systemRow);
+                PruneCsvFiles(Environment.CurrentDirectory, "telemetry_*.csv", systemFile);
 
                 Console.WriteLine(
                     $"SYSTEM | CPU {F(cpuLoad)}% | CPU Temp {FOrBlank(cpuTemp)}°C | " +
@@ -419,6 +514,8 @@ class Program
 
                 var processSamples = new List<ProcessSample>();
                 var activeProcessIds = new HashSet<int>();
+                string processTimestamp = DateTimeOffset.UtcNow.ToString(
+                    "O", CultureInfo.InvariantCulture);
 
                 int foregroundProcessId = -1;
                 try
@@ -508,11 +605,10 @@ class Program
                 }
                 else
                 {
-                    var topProcesses = processSamples
-                        .Where(p => p.CpuUsage > 0.1)
+                    var allProcesses = processSamples
                         .OrderByDescending(p => p.CpuUsage)
-                        .Take(10)
                         .ToList();
+                    var topProcesses = allProcesses.Take(10).ToList();
 
                     Console.WriteLine("========== TOP PROCESSES ==========");
                     if (topProcesses.Count == 0)
@@ -532,14 +628,14 @@ class Program
                     }
                     Console.WriteLine("===================================");
 
-                    foreach (ProcessSample p in topProcesses)
+                    foreach (ProcessSample p in allProcesses)
                     {
                         // Keep CSV fields simple by replacing commas in text fields.
                         string safeName = p.ProcessName.Replace(",", " ");
                         string safePath = p.ProcessPath.Replace(",", " ");
 
                         string processRow = string.Join(",",
-                            timestamp,
+                            processTimestamp,
                             p.ProcessId.ToString(CultureInfo.InvariantCulture),
                             safeName,
                             F(p.CpuUsage),
@@ -547,8 +643,13 @@ class Program
                             p.IsForeground.ToString(),
                             safePath);
 
-                        File.AppendAllText(
-                            processFile, processRow + Environment.NewLine);
+                        processFile = AppendRotatingCsvRow(
+                            Environment.CurrentDirectory, "process_telemetry", sessionId,
+                            ref processFilePart, processFile,
+                            "Timestamp,ProcessId,ProcessName,CPU_Usage,RAM_Usage_MB,IsForeground,ProcessPath",
+                            processRow);
+                        PruneCsvFiles(Environment.CurrentDirectory,
+                            "process_telemetry_*.csv", processFile);
                     }
                 }
 
@@ -559,6 +660,22 @@ class Program
         }
         finally
         {
+            if (stressCancellation is not null)
+            {
+                stressCancellation.Cancel();
+                try { Task.WaitAll(stressWorkers, TimeSpan.FromSeconds(2)); } catch (AggregateException) { }
+                var partial = throttleAnalyzer.Complete(DateTimeOffset.UtcNow);
+                var result = new ThrottleCalibrationResult(null, "not_determined",
+                    partial.EventCount, partial.CalibrationTimestamp, partial.BaselineClockMhz,
+                    partial.EventTemperaturesC);
+                SmartThermProfile.Save(profileFile, result);
+                calibrationState = "cancelled";
+                calibrationMessage = "Calibration was cancelled before the 300-second run completed.";
+                WriteCalibrationStatus(calibrationStatusFile, calibrationState,
+                    calibrationMessage, result);
+                stressCancellation.Dispose();
+                Interlocked.Exchange(ref calibrationActive, 0);
+            }
             trainingWriter?.Dispose();
             computer.Close();
             Console.WriteLine();
@@ -739,11 +856,19 @@ class Program
     private static void TryReadHwinfoTemperatures(
         SharedMemoryReader reader,
         ref float cpuTemp,
-        ref float intelGpuTemp)
+        ref float intelGpuTemp,
+        ref float cpuLoad,
+        ref float cpuClockMhz,
+        ref float cpuPowerW,
+        out bool? hardwareThermalThrottle)
     {
+        hardwareThermalThrottle = null;
         try
         {
             if (!reader.TryReadLocal(out var result))
+                return;
+            TimeSpan pollAge = DateTimeOffset.UtcNow - result.PollTime;
+            if (pollAge > TimeSpan.FromSeconds(15) || pollAge < TimeSpan.FromSeconds(-5))
                 return;
 
             foreach (var reading in result.Readings)
@@ -752,6 +877,43 @@ class Program
                 string label = reading.LabelUser ?? "";
                 string combined = sensorName + " " + label;
                 string unit = reading.Unit ?? "";
+
+                if (combined.Contains("thermal throttling", StringComparison.OrdinalIgnoreCase) ||
+                    combined.Contains("thermal limit exceeded", StringComparison.OrdinalIgnoreCase) ||
+                    combined.Contains("prochot", StringComparison.OrdinalIgnoreCase) ||
+                    combined.Contains("thermal control", StringComparison.OrdinalIgnoreCase))
+                {
+                    string throttleValue = Convert.ToString(reading.Value, CultureInfo.InvariantCulture) ?? "";
+                    if (bool.TryParse(throttleValue, out bool flag))
+                        hardwareThermalThrottle = hardwareThermalThrottle == true || flag;
+                    else if (throttleValue.Equals("Yes", StringComparison.OrdinalIgnoreCase) ||
+                             throttleValue.Equals("Active", StringComparison.OrdinalIgnoreCase) || throttleValue == "1")
+                        hardwareThermalThrottle = true;
+                    else if (throttleValue.Equals("No", StringComparison.OrdinalIgnoreCase) ||
+                             throttleValue.Equals("Inactive", StringComparison.OrdinalIgnoreCase) || throttleValue == "0")
+                        hardwareThermalThrottle ??= false;
+                    else if (double.TryParse(throttleValue, NumberStyles.Float,
+                                 CultureInfo.InvariantCulture, out double numericFlag) &&
+                             (numericFlag == 0 || numericFlag == 1))
+                        hardwareThermalThrottle = hardwareThermalThrottle == true || numericFlag == 1;
+                }
+
+                if (float.TryParse(Convert.ToString(reading.Value, CultureInfo.InvariantCulture),
+                        NumberStyles.Float, CultureInfo.InvariantCulture, out float metric) &&
+                    !float.IsNaN(metric) && !float.IsInfinity(metric))
+                {
+                    if (unit.Contains('%') &&
+                        (combined.Contains("CPU Total", StringComparison.OrdinalIgnoreCase) ||
+                         combined.Contains("Total CPU Usage", StringComparison.OrdinalIgnoreCase)) &&
+                        ValidPercent(metric))
+                        cpuLoad = metric;
+                    if (unit.Contains("MHz", StringComparison.OrdinalIgnoreCase) &&
+                        combined.Contains("CPU", StringComparison.OrdinalIgnoreCase) && ValidClock(metric))
+                        cpuClockMhz = float.IsNaN(cpuClockMhz) ? metric : Math.Max(cpuClockMhz, metric);
+                    if (unit.Contains('W') && combined.Contains("CPU Package", StringComparison.OrdinalIgnoreCase) &&
+                        ValidPower(metric))
+                        cpuPowerW = metric;
+                }
 
                 // Only temperature readings in Celsius are considered.
                 if (!unit.Contains("°C", StringComparison.OrdinalIgnoreCase) &&
@@ -792,6 +954,36 @@ class Program
             // HWiNFO is optional at runtime; continue collecting LHM telemetry.
             Console.WriteLine($"HWiNFO read warning: {ex.Message}");
         }
+    }
+
+    private static Task[] StartCpuStress(CancellationToken token) =>
+        Enumerable.Range(0, Math.Max(1, Environment.ProcessorCount))
+            .Select(_ => Task.Run(() =>
+            {
+                long value = 1;
+                while (!token.IsCancellationRequested && keepRunning)
+                    value = unchecked(value * 1_664_525 + 1_013_904_223);
+                GC.KeepAlive(value);
+            }, token))
+            .ToArray();
+
+    private static void WriteCalibrationStatus(
+        string path, string state, string message, ThrottleCalibrationResult? result)
+    {
+        var status = new
+        {
+            state,
+            message,
+            estimatedTemperatureC = result?.EstimatedTemperatureC,
+            detectionMethod = result?.DetectionMethod,
+            eventCount = result?.EventCount ?? 0,
+            calibrationTimestamp = result?.CalibrationTimestamp,
+            baselineClockMhz = result?.BaselineClockMhz,
+            eventTemperaturesC = result?.EventTemperaturesC ?? Array.Empty<double>()
+        };
+        string temporary = path + ".tmp";
+        File.WriteAllText(temporary, JsonSerializer.Serialize(status));
+        File.Move(temporary, path, true);
     }
 
     private static string F(float value) =>
@@ -892,6 +1084,51 @@ class Program
             {
                 Console.WriteLine(
                     $"Training-data retention warning for {file.Name}: {exception.Message}");
+            }
+        }
+    }
+
+    private static string AppendRotatingCsvRow(
+        string directory,
+        string prefix,
+        string sessionId,
+        ref int part,
+        string currentPath,
+        string header,
+        string row)
+    {
+        if (File.Exists(currentPath) && new FileInfo(currentPath).Length >= MaxTelemetryFileBytes)
+        {
+            part++;
+            currentPath = Path.Combine(directory, $"{prefix}_{sessionId}_part{part:D3}.csv");
+            File.WriteAllText(currentPath, header + Environment.NewLine);
+        }
+        File.AppendAllText(currentPath, row + Environment.NewLine);
+        return currentPath;
+    }
+
+    private static void PruneCsvFiles(string directory, string pattern, string activePath)
+    {
+        string fullActivePath = Path.GetFullPath(activePath);
+        var oldFiles = new DirectoryInfo(directory).GetFiles(pattern)
+            .Where(file => !string.Equals(Path.GetFullPath(file.FullName),
+                fullActivePath, StringComparison.OrdinalIgnoreCase))
+            .OrderBy(file => file.LastWriteTimeUtc)
+            .ToList();
+        long totalBytes = oldFiles.Sum(file => file.Length);
+        foreach (FileInfo file in oldFiles)
+        {
+            if (totalBytes + new FileInfo(activePath).Length <= MaxTelemetryDataBytes)
+                break;
+            try
+            {
+                long size = file.Length;
+                file.Delete();
+                totalBytes -= size;
+            }
+            catch (IOException exception)
+            {
+                Console.WriteLine($"Telemetry retention warning for {file.Name}: {exception.Message}");
             }
         }
     }

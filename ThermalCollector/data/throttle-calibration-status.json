@@ -1,0 +1,1 @@
+{"state":"safety_aborted","message":"Safety abort: required CPU temperature, load, and usable clock or hardware-throttle readings became unavailable.","estimatedTemperatureC":null,"detectionMethod":"not_determined","eventCount":0,"calibrationTimestamp":"2026-10-26T12:47:11.7246242+00:00","baselineClockMhz":null,"eventTemperaturesC":[]}

@@ -29,6 +29,7 @@ public class CollectorProcessManager {
     private final boolean enabled;
     private final AtomicBoolean stopping = new AtomicBoolean();
     private volatile Process process;
+    private BufferedWriter collectorInput;
     private Thread supervisor;
     private boolean restartPaused;
 
@@ -63,6 +64,10 @@ public class CollectorProcessManager {
         Process running = process;
         if (running == null || !running.isAlive()) {
             process = null;
+            if (collectorInput != null) {
+                try { collectorInput.close(); } catch (IOException ignored) { }
+                collectorInput = null;
+            }
             return true;
         }
         stopProcess(running);
@@ -72,6 +77,29 @@ public class CollectorProcessManager {
 
     public synchronized boolean isCollectionRunning() {
         return process != null && process.isAlive() && !restartPaused;
+    }
+
+    public Path throttleCalibrationStatusFile() {
+        return projectFile.getParent().resolve("data/throttle-calibration-status.json");
+    }
+
+    public synchronized boolean startThrottleCalibration() {
+        if (!startCollection()) {
+            return false;
+        }
+        try {
+            if (collectorInput == null) {
+                collectorInput = new BufferedWriter(new OutputStreamWriter(
+                        process.getOutputStream(), StandardCharsets.UTF_8));
+            }
+            collectorInput.write("calibrate");
+            collectorInput.newLine();
+            collectorInput.flush();
+            return true;
+        } catch (IOException exception) {
+            logger.warn("Could not request CPU throttle calibration: {}", exception.getMessage());
+            return false;
+        }
     }
 
     private void startSupervisor() {
@@ -96,12 +124,13 @@ public class CollectorProcessManager {
 
     private void stopProcess(Process running) {
         try {
-            try (BufferedWriter input = new BufferedWriter(
-                    new OutputStreamWriter(running.getOutputStream(), StandardCharsets.UTF_8))) {
-                input.write("stop");
-                input.newLine();
-                input.flush();
+            if (collectorInput == null) {
+                collectorInput = new BufferedWriter(new OutputStreamWriter(
+                        running.getOutputStream(), StandardCharsets.UTF_8));
             }
+            collectorInput.write("stop");
+            collectorInput.newLine();
+            collectorInput.flush();
             if (!running.waitFor(10, TimeUnit.SECONDS)) {
                 logger.warn("Sensor collector did not stop cleanly; requesting process termination.");
                 destroyProcessTree(running, false);
@@ -109,6 +138,8 @@ public class CollectorProcessManager {
                     destroyProcessTree(running, true);
                 }
             }
+            collectorInput.close();
+            collectorInput = null;
         } catch (IOException exception) {
             logger.warn("Could not send a clean shutdown request to the sensor collector: {}",
                     exception.getMessage());
@@ -155,6 +186,10 @@ public class CollectorProcessManager {
         if (process != null) {
             int exitCode = process.exitValue();
             process = null;
+            if (collectorInput != null) {
+                try { collectorInput.close(); } catch (IOException ignored) { }
+                collectorInput = null;
+            }
             if (exitCode == 0) {
                 restartPaused = true;
                 logger.warn("Sensor collector exited normally; automatic restart is paused.");

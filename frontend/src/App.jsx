@@ -24,6 +24,8 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
+  Line,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -88,6 +90,31 @@ function StatCard({ title, value, subtitle, icon: Icon, status = "normal", accen
       <div className="stat-title">{title}</div>
       <div className="stat-value">{value}</div>
       <div className="stat-subtitle">{subtitle}</div>
+    </article>
+  );
+}
+
+function ProcessConsumerCard({ processes, unavailable }) {
+  const items = !unavailable && Array.isArray(processes) ? processes.slice(0, 5) : [];
+  return (
+    <article className="stat-card process-consumers-card">
+      <div className="stat-card-head">
+        <span className="stat-icon"><Activity size={17} strokeWidth={1.8} /></span>
+        <span className={`status-pill ${items.length ? "" : "unavailable"}`}><i />{items.length ? "LIVE" : unavailable ? "OFFLINE" : "WAITING"}</span>
+      </div>
+      <div className="stat-title">Top CPU consumers</div>
+      <div className="consumer-list">
+        {items.length ? items.map((process) => {
+          const cpuPercent = Number(process.cpuPercent);
+          const barWidth = Number.isFinite(cpuPercent) ? Math.max(0, Math.min(100, cpuPercent)) : 0;
+          return <div className="consumer-row" key={process.name}>
+            <span className="consumer-name" title={process.name}>{process.name}</span>
+            <span className="consumer-meter" aria-hidden="true"><i style={{ width: `${barWidth}%` }} /></span>
+            <b>{Number.isFinite(cpuPercent) ? `${cpuPercent.toFixed(1)}%` : "—"}</b>
+          </div>;
+        }) : <div className="consumer-empty">No process data yet</div>}
+      </div>
+      <div className="stat-subtitle">Bars scaled to 100% of total CPU capacity{unavailable ? " · feed unavailable" : ""}</div>
     </article>
   );
 }
@@ -332,10 +359,18 @@ function App() {
   const activeAlerts = alerts.filter((alert) => alert.active);
   const chartData = history.map((reading) => ({
     time: new Date(reading.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+    timestamp: new Date(reading.timestamp).getTime(),
     cpu: reading.cpuTemperatureC ?? undefined,
     gpu: reading.gpuTemperatureC ?? undefined,
   }));
   const hasTemperatureHistory = chartData.filter((reading) => reading.cpu != null || reading.gpu != null).length > 1;
+  const throttleEstimate = calibrationStatus?.estimatedTemperatureC;
+  const forecastChartData = cpuModelReady && cpuForecast?.predictedC != null
+    ? [...chartData.map((point, index) => ({ ...point, forecast: index === chartData.length - 1 ? Number(cpuForecast.currentC ?? current?.cpuTemperatureC) : undefined })), {
+      timestamp: new Date(cpuForecast.targetTime || prediction?.targetTime || Date.now() + 10 * 60_000).getTime(),
+      forecast: Number(cpuForecast.predictedC), cpu: undefined, gpu: undefined,
+    }]
+    : chartData;
   const predictionLabel = warningDemo
     ? demoScenario === "prediction-unavailable"
       ? "Simulated demo · prediction unavailable (no forecast is fabricated)"
@@ -397,9 +432,9 @@ function App() {
           </div>}
           <div className="page-heading">
             <div>
-              <div className="eyebrow">LOCAL SYSTEM / THERMAL HEALTH</div>
-              <h1>System overview<span className="heading-period">.</span></h1>
-              <p>{warningDemo ? "Simulated warning preview; no hardware is being monitored." : "Live temperatures and a 10-minute thermal outlook for this PC."}</p>
+              <div className="eyebrow">LOCAL SYSTEM / OVERVIEW</div>
+              <h1>Thermal Command Center<span className="heading-period">.</span></h1>
+              <p>{warningDemo ? "Simulated warning preview; no hardware is being monitored." : "Real-time insights. Smarter decisions. A cooler, safer PC."}</p>
             </div>
             <div className={`monitoring-badge ${status?.active ? "live" : "offline"}`}>
               <span className="pulse-dot" />
@@ -408,12 +443,12 @@ function App() {
           </div>
 
           {!warningDemo && <div className="dashboard-actions">
-            <button className={`calibrate-button ${calibrationStatus?.collecting ? "stop-calibration" : ""}`}
-              onClick={calibrationStatus?.collecting ? stopCalibration : startCalibration} disabled={calibrationStarting}>
+            <button className={`calibrate-button ${calibrationStatus?.state === "running" ? "stop-calibration" : ""}`}
+              onClick={calibrationStatus?.state === "running" ? stopCalibration : startCalibration} disabled={calibrationStarting}>
               {calibrationStarting ? <RefreshCw size={15} className="spin" />
-                : calibrationStatus?.collecting ? <Square size={14} /> : <Play size={15} />}
+                : calibrationStatus?.state === "running" ? <Square size={14} /> : <Play size={15} />}
               {calibrationStarting ? "Updating calibration…"
-                : calibrationStatus?.collecting ? "Stop calibration" : "Start calibration"}
+                : calibrationStatus?.state === "running" ? "Stop calibration" : "Start CPU throttle calibration"}
             </button>
             <button className="preview-open" onClick={() => {
               const url = new URL(window.location.href);
@@ -425,6 +460,11 @@ function App() {
           </div>}
           {!warningDemo && calibrationMessage && <div className="calibration-message" role="status">
             <Thermometer size={16} /><span>{calibrationMessage}</span>
+          </div>}
+          {!warningDemo && calibrationStatus?.state && calibrationStatus.state !== "idle" && <div className="calibration-message" role="status">
+            <Thermometer size={16} /><span>{calibrationStatus.message}{calibrationStatus.estimatedTemperatureC != null
+              ? ` Estimated throttle temperature: ${Number(calibrationStatus.estimatedTemperatureC).toFixed(1)}°C (${calibrationStatus.detectionMethod}).`
+              : ""}</span>
           </div>}
           {warningDemo && <section className="demo-controls" aria-label="Warning preview scenarios">
             <div><b>Preview scenario</b><span>Switch states instantly; all values are simulated.</span></div>
@@ -474,6 +514,7 @@ function App() {
               <StatCard title="CPU utilization"
                 value={current?.cpuUtilizationPercent == null ? "--" : `${Number(current.cpuUtilizationPercent).toFixed(0)}%`}
                 subtitle="Current processor load" icon={Activity} accent="#f6bd74" />
+              <ProcessConsumerCard processes={current?.topProcesses} unavailable={Boolean(error)} />
               <StatCard title="CPU clock speed"
                 value={current?.cpuClockMhz == null ? "--" : `${(current.cpuClockMhz / 1000).toFixed(2)} GHz`}
                 subtitle="Highest reported core clock" icon={Gauge} accent="#67c5e8" />
@@ -495,14 +536,15 @@ function App() {
           {!status?.active && !warningDemo && <div className="stats-grid temperature-offline">
             <StatCard title="CPU temperature" value="Unavailable" subtitle="No fresh hardware reading" icon={Cpu} status="unavailable" accent="#72e3bd" />
             <StatCard title="GPU temperature" value="Unavailable" subtitle="No fresh hardware reading" icon={Zap} status="unavailable" accent="#8f9cff" />
+            <ProcessConsumerCard processes={current?.topProcesses} unavailable={Boolean(error) || !status?.active} />
           </div>}
 
           <section className="panel process-panel" id="apps">
             <div className="panel-heading">
-              <div><div className="eyebrow">LIVE PROCESS MONITOR</div><h2>Apps using CPU</h2></div>
+              <div><div className="eyebrow">LIVE PROCESS MONITOR</div><h2>Running apps and processes</h2></div>
               <span className="history-range">{warningDemo ? "Simulated" : processUsage?.available ? "Live · 5 sec samples" : "Waiting for collector"}</span>
             </div>
-            <p className="process-note">CPU percentage is each app’s share of total processor capacity. Ending an app may discard unsaved work.</p>
+            <p className="process-note">CPU percentage is each process’s share of total processor capacity. The list refreshes about every five seconds; ending a process may discard unsaved work.</p>
             {processUsage?.available && processUsage.processes?.length ? <div className="process-list">
               {processUsage.processes.map((process) => <div className="process-row" key={process.processId}>
                 <div className="process-title"><b>{process.processName}</b><span>PID {process.processId}{process.foreground ? " · In use" : ""}</span></div>
@@ -516,15 +558,15 @@ function App() {
           </section>
 
           <div className="content-grid">
-            <section className="panel chart-panel" id="history">
+            <section className="panel chart-panel outlook-chart" id="history">
               <div className="panel-heading">
-                <div><div className="eyebrow">SENSOR HISTORY</div><h2>Temperature trend</h2></div>
-                <span className="history-range">Recent readings <ChevronDown size={14} /></span>
+                <div><div className="eyebrow">PREDICTIVE OUTLOOK</div><h2>10-Minute Thermal Outlook</h2><p className="panel-subtitle">Predicted CPU temperature with available sensor history</p></div>
+                <span className="history-range">{cpuModelReady ? "Model forecast" : "Live history"}</span>
               </div>
-              {hasTemperatureHistory ? (
-                <div className="chart-wrap">
+              {hasTemperatureHistory || cpuModelReady ? (
+                <div className="chart-wrap outlook-wrap">
                   <ResponsiveContainer width="100%" height="100%">
-                    <AreaChart data={chartData} margin={{ top: 12, right: 6, left: -22, bottom: 0 }}>
+                    <AreaChart data={forecastChartData} margin={{ top: 14, right: 14, left: -16, bottom: 0 }}>
                       <defs>
                         <linearGradient id="cpuFill" x1="0" y1="0" x2="0" y2="1">
                           <stop offset="0%" stopColor="#6fe1b8" stopOpacity={0.22} />
@@ -536,25 +578,29 @@ function App() {
                         </linearGradient>
                       </defs>
                       <CartesianGrid stroke="#202a36" vertical={false} />
-                      <XAxis dataKey="time" tick={{ fill: "#778697", fontSize: 11 }} axisLine={false} tickLine={false} minTickGap={28} />
-                      <YAxis domain={["dataMin - 5", "dataMax + 5"]} tick={{ fill: "#778697", fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <XAxis dataKey="timestamp" type="number" scale="time" domain={["dataMin", "dataMax"]}
+                        tickFormatter={(value) => new Date(value).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+                        tick={{ fill: "#778697", fontSize: 11 }} axisLine={false} tickLine={false} minTickGap={28} />
+                      <YAxis domain={["dataMin - 5", "dataMax + 5"]} tick={{ fill: "#778697", fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={(value) => `${value}°`} />
                       <Tooltip contentStyle={{ background: "#111a24", border: "1px solid #283544", borderRadius: 9 }}
                         labelStyle={{ color: "#d9e3eb" }} formatter={(value) => [`${Number(value).toFixed(1)}°C`]} />
+                      {throttleEstimate != null && Number.isFinite(Number(throttleEstimate)) && <ReferenceLine y={Number(throttleEstimate)} stroke="#f1a66d" strokeDasharray="5 5" label={{ value: "Calibrated throttle estimate", fill: "#f1a66d", fontSize: 10, position: "insideTopRight" }} />}
                       <Area type="monotone" dataKey="cpu" name="CPU" stroke="#72e3bd" strokeWidth={2} fill="url(#cpuFill)" connectNulls />
                       <Area type="monotone" dataKey="gpu" name="GPU" stroke="#929dff" strokeWidth={2} fill="url(#gpuFill)" connectNulls />
+                      {cpuModelReady && <Line type="linear" dataKey="forecast" name="CPU forecast endpoint" stroke="#53c9ef" strokeWidth={2.5} strokeDasharray="7 5" connectNulls dot={{ r: 5, fill: "#53c9ef", stroke: "#0d1822", strokeWidth: 3 }} activeDot={{ r: 7 }} />}
                     </AreaChart>
                   </ResponsiveContainer>
                 </div>
               ) : (
-                <div className="chart-empty"><HardDrive size={20} /><span>{status?.active ? "More readings are needed to draw a trend." : "Sensor history appears here when the collector is running."}</span></div>
+                <div className="chart-empty"><HardDrive size={20} /><span>{status?.active ? "More readings are needed to draw a trend or the model forecast is not ready." : "Sensor history appears here when the collector is running."}</span></div>
               )}
-              <div className="chart-legend"><span><i className="cpu-dot" /> CPU</span><span><i className="gpu-dot" /> GPU</span>
+              <div className="chart-legend"><span><i className="cpu-dot" /> CPU actual</span><span><i className="forecast-dot" /> CPU forecast endpoint</span><span><i className="gpu-dot" /> GPU</span>
                 <span className="chart-unit">Temperature · °C</span></div>
             </section>
 
             <section className="panel forecast-panel">
               <div className="panel-heading">
-                <div><div className="eyebrow">PREDICTIVE OUTLOOK</div><h2>In 10 minutes</h2></div>
+                <div><div className="eyebrow">THERMAL RISK</div><h2>10-minute outlook</h2></div>
                 <span className="estimate-tag"><Zap size={13} />
                   CPU {warningDemo ? "DEMO" : cpuModelReady ? "READY" : "NOT READY"} · GPU {warningDemo ? "DEMO" : gpuModelReady ? "READY" : "NOT READY"}
                 </span>
@@ -571,6 +617,11 @@ function App() {
                       <span>{warningDemo ? `Demo value · ${state}` : forecast?.status === "READY" ? `${forecastReadiness(forecast)} · ${state}` : forecastReadiness(forecast)}</span></div>
                   </div>;
                 })}
+              </div>
+              <div className={`risk-summary ${statusFor(cpuForecast?.predictedC, cpuThreshold)}`}>
+                <div><span>Predicted CPU</span><b>{cpuForecast?.predictedC == null ? "Unavailable" : formatTemp(cpuForecast.predictedC)}</b></div>
+                <div><span>Throttle estimate</span><b>{!warningDemo && throttleEstimate != null && Number.isFinite(Number(throttleEstimate)) ? formatTemp(throttleEstimate) : "Not determined"}</b></div>
+                <small>{cpuForecast?.predictedC == null ? "Risk is unavailable until a valid model forecast is ready." : `Compared with the configured ${cpuThreshold}°C warning threshold.`}</small>
               </div>
               <div className="model-note"><div className="model-indicator"><Activity size={14} /></div>
                 <div><b>{warningDemo ? "DEMO FORECAST · simulated" : cpuModelReady ? (cpuForecast?.model || prediction?.model || "Trained model") : "CPU model not ready"}</b><span>

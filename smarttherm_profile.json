@@ -1,0 +1,8 @@
+{
+  "cpuThrottleTemperatureC": null,
+  "cpuThrottleDetectionMethod": "not_determined",
+  "cpuThrottleEventCount": 0,
+  "cpuThrottleCalibrationTimestamp": "2026-10-26T12:47:11.7246242+00:00",
+  "cpuThrottleBaselineClockMhz": null,
+  "cpuThrottleEventTemperaturesC": []
+}

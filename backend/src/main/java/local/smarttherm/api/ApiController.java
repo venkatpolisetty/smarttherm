@@ -27,6 +27,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.Instant;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
 import java.util.Map;
 
@@ -65,10 +68,10 @@ public class ApiController {
 
     @PostMapping("/calibration/start")
     public Map<String, Object> startCalibration() {
-        boolean collectorStarted = collectorProcessManager.startCollection();
+        boolean collectorStarted = collectorProcessManager.startThrottleCalibration();
         boolean trainingCheckRequested = pythonPredictionClient.requestTrainingCheck();
         String message = collectorStarted
-                ? "Calibration started. SmartTherm is collecting real readings; model training and updates happen automatically when enough valid data is available."
+                ? "CPU throttle calibration requested. The .NET collector will run a bounded stress test for up to 300 seconds and stop on its safety abort."
                 : "Calibration could not start the sensor collector. Check that collection is enabled and the .NET collector can run.";
         return Map.of(
                 "collectorStarted", collectorStarted,
@@ -78,7 +81,22 @@ public class ApiController {
 
     @GetMapping("/calibration/status")
     public Map<String, Object> calibrationStatus() {
-        return Map.of("collecting", collectorProcessManager.isCollectionRunning());
+        Map<String, Object> result = new java.util.LinkedHashMap<>();
+        result.put("collecting", collectorProcessManager.isCollectionRunning());
+        Path statusFile = collectorProcessManager.throttleCalibrationStatusFile();
+        try {
+            if (Files.isRegularFile(statusFile)) {
+                Map<?, ?> saved = new ObjectMapper().readValue(statusFile.toFile(), Map.class);
+                result.putAll((Map<String, Object>) saved);
+            } else {
+                result.put("state", "not_started");
+                result.put("message", "No throttle calibration has run.");
+            }
+        } catch (Exception exception) {
+            result.put("state", "unavailable");
+            result.put("message", "Throttle calibration status is unavailable.");
+        }
+        return result;
     }
 
     @PostMapping("/calibration/stop")
