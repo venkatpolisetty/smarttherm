@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SmartTherm
 
 SmartTherm is a Windows-first, local PC thermal dashboard. It reuses the existing `ThermalCollector` .NET application and its LibreHardwareMonitor/HWiNFO integrations for real hardware readings, exposes them through a loopback-only Java 21 / Spring Boot API, and presents a React dashboard. It does not make fan, CPU, or other hardware changes.
@@ -91,6 +90,10 @@ Automatic training can be disabled with `SMARTTHERM_AUTO_TRAINING=false` or its 
 
 Current workspace data is insufficient for validated models: the assessor finds zero CPU targets, and the GPU examples fail the chronological split requirements. Automatic training reports this state without inventing predictions. See the ML integration guide for data requirements and model-retention policy. The backend build passed `mvn verify` with Java 21 and Maven 3.10.0 from the local Maven cache; the earlier launch environment did not have `mvn` available on `PATH`.
 
+## Planned design (not implemented)
+
+The target design is per-device calibration, an RC thermal physics model, and a gradient-boosting residual correction on top of it. None of this is implemented yet. The current predictor is the XGBoost / Gradient Boosting approach described above, and a model is only used if it beats the persistence baseline. "CPU throttle calibration" in this README refers to throttle-temperature detection, not per-device model calibration.
+
 ## API
 
 All endpoints are local at `http://127.0.0.1:8080`.
@@ -121,6 +124,12 @@ Example settings request:
 
 Thresholds must be between 50°C and 110°C. `backend\data\settings.example.json` is an example; the application creates its own `settings.json` when the user saves settings. The local data files are ignored by Git.
 
+## Limitations
+
+- Depends on third-party sensor tooling (LibreHardwareMonitorLib, optionally HWiNFO). Some CPU/iGPU temperatures are only available through HWiNFO shared memory.
+- No validated trained model exists yet, so no real predictions or alerts are produced.
+- Sensor access may require running elevated; exposure varies by device, drivers, and firmware.
+
 ## Troubleshooting
 
 - **Collector disconnected:** Confirm the backend can find `dotnet` and `ThermalCollector\ThermalCollector.csproj`, then check its collector startup/error logs and `ThermalCollector\data\current-reading.json`. Set `SMARTTHERM_COLLECTOR_ENABLED=false` only when intentionally disabling automatic collection.
@@ -146,6 +155,3 @@ dotnet build .\ThermalCollector\ThermalCollector.csproj
 ```
 
 Sensor integration needs Windows hardware and is not fully exercised by unit tests. The prediction and alert tests use isolated test inputs; these values are not part of the production dashboard.
-=======
-# smarttherm
->>>>>>> origin/main
