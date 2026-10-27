@@ -1,0 +1,9 @@
+Model,Test examples,MAE (°C),RMSE (°C),Status
+Persistence baseline,551,6.69,8.47,Scored
+XGBoost residual (validation-calibrated),551,6.08,7.48,Scored
+ExtraTrees residual (validation-calibrated),551,6.35,7.75,Scored
+XGBoost (fixed 5-minute target),551,7.42,8.90,Scored
+Gradient Boosting (fixed 5-minute target),551,9.57,11.34,Scored
+Gradient Boosting (adaptive horizon),551,10.53,12.15,Scored
+Physics ODE + horizon,—,N/A,N/A,15 calibration transitions available; 120 required
+Hybrid (ODE + GB + XGBoost + telemetry),—,N/A,N/A,ODE calibration insufficient on this split

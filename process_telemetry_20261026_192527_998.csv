@@ -1,0 +1,158 @@
+Timestamp,ProcessId,ProcessName,CPU_Usage,RAM_Usage_MB,IsForeground,ProcessPath
+2026-10-26 19:25:34,24844,OneDrive,5.13,99.46,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:25:34,35004,Microsoft.VisualStudio.Code.ServiceHost,4.05,158.07,False,c:\Users\rithv\.vscode\extensions\ms-dotnettools.csdevkit-3.40.215-win32-x64\components\vs-green-server\platforms\win32-x64\node_modules\@microsoft\visualstudio-code-servicehost.win32-x64\Microsoft.VisualStudio.Code.ServiceHost.exe
+2026-10-26 19:25:34,29320,dotnet,1.66,153.34,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-26 19:25:34,2508,ChatGPT,1.39,120.92,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:25:34,37200,dotnet,0.81,42.52,False,C:\Program Files\dotnet\dotnet.exe
+2026-10-26 19:25:34,25032,ThermalCollector,0.79,72.37,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:25:34,20548,Code,0.77,266.23,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:34,36536,HWiNFO64,0.50,19.38,False,
+2026-10-26 19:25:34,10464,Code,0.29,63.51,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:34,29476,chrome,0.27,38.58,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-26 19:25:40,24844,OneDrive,0.99,99.64,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:25:40,25032,ThermalCollector,0.95,73.49,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:25:40,36536,HWiNFO64,0.76,19.41,False,
+2026-10-26 19:25:40,2508,ChatGPT,0.50,122.83,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:25:40,19756,explorer,0.35,117.36,False,C:\WINDOWS\Explorer.EXE
+2026-10-26 19:25:40,25636,ChatGPT,0.24,175.65,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:25:40,15288,Microsoft.VisualStudio.Code.Server,0.24,34.20,False,c:\Users\rithv\.vscode\extensions\ms-dotnettools.csdevkit-3.40.215-win32-x64\components\vs-green-server\platforms\win32-x64\node_modules\@microsoft\visualstudio-server.win32-x64\Microsoft.VisualStudio.Code.Server.exe
+2026-10-26 19:25:40,20548,Code,0.19,258.75,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:40,10464,Code,0.17,62.79,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:46,24844,OneDrive,1.61,99.07,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:25:46,20548,Code,1.21,253.31,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:46,25032,ThermalCollector,0.87,72.26,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:25:46,36536,HWiNFO64,0.66,19.41,False,
+2026-10-26 19:25:46,19348,msedge,0.62,70.49,False,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+2026-10-26 19:25:46,2508,ChatGPT,0.53,109.22,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:25:46,1872,Code,0.15,39.32,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:46,35532,chrome,0.13,67.31,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-26 19:25:46,25636,ChatGPT,0.13,159.44,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:25:46,10464,Code,0.13,63.04,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:53,20548,Code,2.30,272.59,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:53,11596,Code,0.92,153.29,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:53,25032,ThermalCollector,0.75,73.34,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:25:53,24844,OneDrive,0.62,99.73,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:25:53,36536,HWiNFO64,0.58,19.46,False,
+2026-10-26 19:25:53,2508,ChatGPT,0.38,111.54,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:25:53,23688,Code,0.32,49.14,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:53,10464,Code,0.23,65.95,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:53,35532,chrome,0.11,68.28,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-26 19:25:59,20548,Code,1.04,268.86,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:59,25032,ThermalCollector,0.76,72.18,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:25:59,24844,OneDrive,0.74,99.70,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:25:59,36536,HWiNFO64,0.67,19.46,False,
+2026-10-26 19:25:59,11596,Code,0.52,148.01,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:59,2508,ChatGPT,0.41,112.84,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:25:59,23688,Code,0.30,49.35,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:25:59,4444,Canva,0.17,47.45,False,C:\Users\rithv\AppData\Local\Programs\Canva\Canva.exe
+2026-10-26 19:25:59,35532,chrome,0.11,74.93,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-26 19:26:05,24844,OneDrive,5.63,102.44,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:05,20548,Code,2.82,280.03,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:05,11596,Code,0.89,146.44,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:05,25032,ThermalCollector,0.72,72.23,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:05,36536,HWiNFO64,0.55,19.46,False,
+2026-10-26 19:26:05,2508,ChatGPT,0.28,113.04,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:05,4444,Canva,0.28,47.62,False,C:\Users\rithv\AppData\Local\Programs\Canva\Canva.exe
+2026-10-26 19:26:05,23688,Code,0.25,49.46,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:05,10464,Code,0.21,69.23,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:05,19756,explorer,0.15,117.99,False,C:\WINDOWS\Explorer.EXE
+2026-10-26 19:26:11,20548,Code,2.46,296.37,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:11,24844,OneDrive,1.62,102.51,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:11,11596,Code,0.91,154.44,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:11,25032,ThermalCollector,0.91,75.41,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:11,36536,HWiNFO64,0.47,19.47,False,
+2026-10-26 19:26:11,2508,ChatGPT,0.41,113.49,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:11,10464,Code,0.24,69.64,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:11,23688,Code,0.22,50.53,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:17,20548,Code,1.30,339.07,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:17,11596,Code,0.77,151.09,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:17,25032,ThermalCollector,0.75,72.89,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:17,24844,OneDrive,0.64,103.53,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:17,36536,HWiNFO64,0.45,19.51,False,
+2026-10-26 19:26:17,2508,ChatGPT,0.23,114.76,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:17,23688,Code,0.23,51.52,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:17,10464,Code,0.15,70.09,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:17,35532,chrome,0.11,75.48,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-26 19:26:17,4444,Canva,0.11,48.53,False,C:\Users\rithv\AppData\Local\Programs\Canva\Canva.exe
+2026-10-26 19:26:23,20548,Code,1.80,315.90,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:23,24844,OneDrive,1.16,106.72,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:23,11596,Code,1.14,160.05,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:23,25032,ThermalCollector,0.84,72.89,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:23,36536,HWiNFO64,0.43,19.56,False,
+2026-10-26 19:26:23,10464,Code,0.41,72.05,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:23,2508,ChatGPT,0.30,115.56,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:23,15288,Microsoft.VisualStudio.Code.Server,0.13,45.61,False,c:\Users\rithv\.vscode\extensions\ms-dotnettools.csdevkit-3.40.215-win32-x64\components\vs-green-server\platforms\win32-x64\node_modules\@microsoft\visualstudio-server.win32-x64\Microsoft.VisualStudio.Code.Server.exe
+2026-10-26 19:26:23,23688,Code,0.11,52.06,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:23,1872,Code,0.11,40.07,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:29,20548,Code,1.91,319.08,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:29,11596,Code,0.84,150.03,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:29,36536,HWiNFO64,0.71,19.57,False,
+2026-10-26 19:26:29,25032,ThermalCollector,0.71,73.41,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:29,10464,Code,0.54,71.98,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:29,24844,OneDrive,0.45,103.55,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:29,2508,ChatGPT,0.26,116.86,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:29,23688,Code,0.21,51.71,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:29,19756,explorer,0.11,121.40,False,C:\WINDOWS\Explorer.EXE
+2026-10-26 19:26:29,35532,chrome,0.11,78.82,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-26 19:26:35,24844,OneDrive,4.08,103.60,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:35,11596,Code,1.20,149.62,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:35,20548,Code,0.84,364.78,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:35,25032,ThermalCollector,0.84,73.41,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:35,36536,HWiNFO64,0.60,19.57,False,
+2026-10-26 19:26:35,10464,Code,0.41,72.39,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:35,2508,ChatGPT,0.34,117.18,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:35,35004,Microsoft.VisualStudio.Code.ServiceHost,0.24,122.91,False,c:\Users\rithv\.vscode\extensions\ms-dotnettools.csdevkit-3.40.215-win32-x64\components\vs-green-server\platforms\win32-x64\node_modules\@microsoft\visualstudio-code-servicehost.win32-x64\Microsoft.VisualStudio.Code.ServiceHost.exe
+2026-10-26 19:26:35,23688,Code,0.11,52.43,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:41,24844,OneDrive,2.03,104.62,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:41,11596,Code,1.59,165.48,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:41,20548,Code,1.52,341.23,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:41,25032,ThermalCollector,0.84,71.86,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:41,36536,HWiNFO64,0.54,19.57,False,
+2026-10-26 19:26:41,2508,ChatGPT,0.30,117.78,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:41,25636,ChatGPT,0.24,135.56,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:41,19756,explorer,0.19,122.38,False,C:\WINDOWS\Explorer.EXE
+2026-10-26 19:26:41,23688,Code,0.13,52.98,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:41,10464,Code,0.13,72.59,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:47,20548,Code,1.75,333.52,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:47,11596,Code,0.79,165.54,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:47,25032,ThermalCollector,0.75,72.65,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:47,36536,HWiNFO64,0.66,19.57,False,
+2026-10-26 19:26:47,24844,OneDrive,0.53,104.66,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:47,2508,ChatGPT,0.38,114.29,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:47,10464,Code,0.28,76.57,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:47,23688,Code,0.19,52.96,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:47,19532,backgroundTaskHost,0.17,26.88,False,C:\Windows\system32\backgroundTaskHost.exe
+2026-10-26 19:26:47,25636,ChatGPT,0.15,143.85,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:53,20548,Code,1.41,283.54,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:53,24844,OneDrive,0.97,103.62,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:53,25032,ThermalCollector,0.74,72.59,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:53,11596,Code,0.65,172.95,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:53,36536,HWiNFO64,0.48,19.58,False,
+2026-10-26 19:26:53,2508,ChatGPT,0.30,114.50,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:53,23688,Code,0.19,57.98,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:53,4444,Canva,0.17,49.20,False,C:\Users\rithv\AppData\Local\Programs\Canva\Canva.exe
+2026-10-26 19:26:53,4820,codex,0.15,39.30,False,C:\Users\rithv\AppData\Local\OpenAI\Codex\bin\2993767bd1dfb009\codex.exe
+2026-10-26 19:26:53,29252,Dell.UCA.Systray,0.13,29.36,False,C:\Program Files\Dell\MyDell\Console\Dell.UCA.Systray.exe
+2026-10-26 19:26:59,20548,Code,1.39,292.31,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:59,25032,ThermalCollector,0.74,72.93,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:26:59,36536,HWiNFO64,0.50,19.58,False,
+2026-10-26 19:26:59,24844,OneDrive,0.41,103.66,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:26:59,11596,Code,0.39,148.40,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:59,2508,ChatGPT,0.30,114.35,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:26:59,23688,Code,0.24,58.11,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:26:59,35532,chrome,0.11,80.82,False,C:\Program Files\Google\Chrome\Application\chrome.exe
+2026-10-26 19:27:05,24844,OneDrive,2.80,103.63,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:27:05,20548,Code,1.19,290.73,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:27:05,25032,ThermalCollector,0.69,72.94,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:27:05,36536,HWiNFO64,0.52,19.58,False,
+2026-10-26 19:27:05,11596,Code,0.50,158.06,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:27:05,23688,Code,0.24,58.27,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:27:05,2508,ChatGPT,0.22,114.97,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:27:05,10464,Code,0.17,76.17,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:27:11,24844,OneDrive,3.67,104.97,False,C:\Users\rithv\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+2026-10-26 19:27:11,20548,Code,1.17,290.29,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:27:11,25032,ThermalCollector,0.83,72.54,False,C:\Users\rithv\OneDrive\Documents\github\smarttherm\ThermalCollector\bin\Debug\net10.0-windows\ThermalCollector.exe
+2026-10-26 19:27:11,11596,Code,0.45,161.97,False,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe
+2026-10-26 19:27:11,36536,HWiNFO64,0.43,19.58,False,
+2026-10-26 19:27:11,2508,ChatGPT,0.28,114.83,False,C:\Program Files\WindowsApps\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\app\ChatGPT.exe
+2026-10-26 19:27:11,23688,Code,0.17,58.67,True,C:\Users\rithv\AppData\Local\Programs\Microsoft VS Code\Code.exe

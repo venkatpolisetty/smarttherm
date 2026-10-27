@@ -1,0 +1,10 @@
+Model,MAE (°C),RMSE (°C),Beats persistence?
+Combined — Persistence baseline,6.69,8.47,No
+Combined — XGBoost residual (validation-calibrated),6.08,7.48,Yes
+Combined — ExtraTrees residual (validation-calibrated),6.35,7.75,Yes
+Combined — XGBoost (fixed 5-minute target),7.42,8.90,No
+Combined — Gradient Boosting (fixed 5-minute target),9.57,11.34,No
+Combined — Gradient Boosting (adaptive horizon),10.53,12.15,No
+Power session — Persistence baseline,8.28,10.21,No
+Power session — Physics ODE + horizon,7.83,9.57,Yes
+Power session — Hybrid (ODE + GB + XGBoost + telemetry),16.05,17.90,No

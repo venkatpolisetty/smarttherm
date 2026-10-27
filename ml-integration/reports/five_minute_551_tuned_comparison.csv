@@ -1,0 +1,8 @@
+model,test_examples,MAE_C,RMSE_C,status
+Persistence baseline,551,6.6897,8.4744,Scored
+"XGBoost, fixed 5-minute target",551,7.4213,8.9023,Scored
+"Gradient Boosting, fixed 5-minute target",551,9.5734,11.3374,Scored
+"Gradient Boosting, adaptive horizon",551,10.5281,12.1546,Scored
+XGBoost residual + validation correction,551,6.084,7.48,Scored; correction weight 0.48 selected on validation
+ExtraTrees residual + validation correction,551,6.351,7.745,Scored; correction weight 0.50 selected on validation
+Physics ODE + horizon,0,,,Not scored: ODE calibration produced 15 usable transitions; 120 required. Power was present on the 551 test rows.

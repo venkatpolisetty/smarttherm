@@ -1,0 +1,5 @@
+model,train_rows,test_examples,MAE_C,RMSE_C
+Persistence,0,551,6.6896551724,8.4743661729
+XGBoost (fixed 5-minute target),1396,551,7.4213196465,8.9023424911
+Gradient Boosting (fixed 5-minute target),1396,551,9.5734081242,11.3374284088
+"Gradient Boosting (adaptive horizon, scored at 5 minutes)",11230,551,10.5281449005,12.154597535
