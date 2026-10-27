@@ -8,12 +8,15 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import joblib
+import numpy as np
+from sklearn.dummy import DummyRegressor
 from sklearn.linear_model import LinearRegression
 
 from smarttherm_ml.dataset import SensorPoint, TrainingExample, build_examples, load_points
 from smarttherm_ml.features import FEATURE_NAMES, compute_features
 from smarttherm_ml.training import (
     InsufficientTrainingDataError,
+    _PersistenceResidualPipeline,
     assess_examples,
     split_chronologically,
     train_component,
@@ -50,7 +53,7 @@ class DatasetTests(unittest.TestCase):
             for index in range(10)
         ]
         points.extend(
-            _point(start + timedelta(seconds=600 + 5 * index), "second")
+            _point(start + timedelta(seconds=300 + 5 * index), "second")
             for index in range(10)
         )
 
@@ -59,7 +62,7 @@ class DatasetTests(unittest.TestCase):
         self.assertEqual(examples["CPU"], [])
         self.assertEqual(examples["GPU"], [])
 
-    def test_builds_real_ten_minute_targets_inside_continuous_session(self) -> None:
+    def test_builds_real_five_minute_targets_inside_continuous_session(self) -> None:
         start = datetime(2026, 10, 20, tzinfo=timezone.utc)
         points = [
             _point(start + timedelta(seconds=5 * index), "continuous")
@@ -70,10 +73,10 @@ class DatasetTests(unittest.TestCase):
 
         self.assertGreater(len(examples["CPU"]), 0)
         first = examples["CPU"][0]
-        target_index = round((first.timestamp - start).total_seconds() / 5) + 120
+        target_index = round((first.timestamp - start).total_seconds() / 5) + 60
         self.assertEqual(
             points[target_index].timestamp - first.timestamp,
-            timedelta(seconds=600),
+            timedelta(seconds=300),
         )
         self.assertEqual(first.target_c, points[target_index].cpu_temperature_c)
         self.assertEqual(set(first.features), set(FEATURE_NAMES))
@@ -86,6 +89,21 @@ class DatasetTests(unittest.TestCase):
 
         self.assertEqual(features["temperature_current_c"], history[-1].cpu_temperature_c)
         self.assertAlmostEqual(features["temperature_slope_30s_c_per_min"], 1.0)
+
+    def test_persistence_residual_pipeline_returns_absolute_temperature_predictions(self) -> None:
+        residual_model = DummyRegressor(strategy="constant", constant=4.0).fit(
+            np.zeros((2, len(FEATURE_NAMES))),
+            [4.0, 4.0],
+        )
+        pipeline = _PersistenceResidualPipeline(residual_model, correction_weight=0.5)
+        features = [[0.0] * len(FEATURE_NAMES) for _ in range(2)]
+        temperature_index = FEATURE_NAMES.index("temperature_current_c")
+        features[0][temperature_index] = 40.0
+        features[1][temperature_index] = 60.0
+
+        predictions = pipeline.predict(np.asarray(features, dtype=float))
+
+        np.testing.assert_allclose(predictions, [42.0, 62.0])
 
     def test_chronological_split_refuses_short_data(self) -> None:
         start = datetime(2026, 10, 20, tzinfo=timezone.utc)
@@ -115,8 +133,8 @@ class DatasetTests(unittest.TestCase):
             examples, minimum_train=100, minimum_evaluation=50
         )
 
-        self.assertTrue(train[-1].timestamp + timedelta(minutes=10) < validation[0].timestamp)
-        self.assertTrue(validation[-1].timestamp + timedelta(minutes=10) < test[0].timestamp)
+        self.assertTrue(train[-1].timestamp + timedelta(minutes=5) < validation[0].timestamp)
+        self.assertTrue(validation[-1].timestamp + timedelta(minutes=5) < test[0].timestamp)
         block = lambda item: int((item.timestamp - start).total_seconds() // 3600)
         train_blocks = {block(item) for item in train}
         validation_blocks = {block(item) for item in validation}
@@ -256,7 +274,8 @@ def _install_incumbent(model_dir: Path, component: str, pipeline: object) -> Non
     artifact_name = f"{component.lower()}-incumbent.joblib"
     joblib.dump(
         {
-            "schemaVersion": 1,
+            "schemaVersion": 2,
+            "targetHorizonSeconds": 300,
             "component": component,
             "model": "Incumbent",
             "featureNames": FEATURE_NAMES,
@@ -265,7 +284,7 @@ def _install_incumbent(model_dir: Path, component: str, pipeline: object) -> Non
         model_dir / artifact_name,
     )
     (model_dir / "manifest.json").write_text(
-        json.dumps({"schemaVersion": 1, "models": {
+        json.dumps({"schemaVersion": 2, "models": {
             component: {"artifact": artifact_name, "model": "Incumbent"}
         }}),
         encoding="utf-8",

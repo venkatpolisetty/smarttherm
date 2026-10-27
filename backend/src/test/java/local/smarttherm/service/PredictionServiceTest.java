@@ -32,7 +32,7 @@ class PredictionServiceTest {
         assertThat(result.status()).isEqualTo("MODEL_NOT_READY");
         assertThat(result.trainedModel()).isFalse();
         assertThat(result.model()).contains("No validated trained model");
-        assertThat(result.targetTime()).isEqualTo(result.generatedAt().plusSeconds(600));
+        assertThat(result.targetTime()).isEqualTo(result.generatedAt().plusSeconds(300));
         assertThat(result.forecasts().getFirst().predictedC()).isNull();
     }
 
@@ -74,9 +74,9 @@ class PredictionServiceTest {
                 "Python trained models: XGBoost",
                 true,
                 now,
-                now.plusSeconds(600),
+                now.plusSeconds(300),
                 List.of(new local.smarttherm.model.PredictionForecast(
-                        "CPU", 64.0, 70.0, now, now.plusSeconds(600), "READY", "XGBoost")));
+                        "CPU", 64.0, 70.0, now, now.plusSeconds(300), "READY", "XGBoost")));
         PythonPredictionClient client = mock(PythonPredictionClient.class);
         when(client.predict(anyList())).thenReturn(
                 new PythonPredictionClient.InferenceResult(Optional.of(trained), ""));

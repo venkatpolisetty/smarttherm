@@ -20,9 +20,9 @@ import java.util.Optional;
 @Service
 public class PythonPredictionClient {
     private static final Logger logger = LoggerFactory.getLogger(PythonPredictionClient.class);
-    private static final Duration LOOKBACK = Duration.ofMinutes(10);
+    private static final Duration LOOKBACK = Duration.ofMinutes(5);
     private static final int MAX_READINGS = 150;
-    private static final Duration TARGET_HORIZON = Duration.ofMinutes(10);
+    private static final Duration TARGET_HORIZON = Duration.ofMinutes(5);
     private static final Duration TARGET_TOLERANCE = Duration.ofSeconds(30);
     private static final Duration ERROR_LOG_INTERVAL = Duration.ofMinutes(1);
 

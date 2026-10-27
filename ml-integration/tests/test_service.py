@@ -63,16 +63,17 @@ class ServiceTests(IsolatedAsyncioTestCase):
             model = DummyRegressor(strategy="constant", constant=63.5)
             model.fit([[0.0] * len(FEATURE_NAMES)], [63.5])
             artifact = {
-                "schemaVersion": 1,
+                "schemaVersion": 2,
                 "component": "CPU",
                 "model": "XGBoost",
+                "targetHorizonSeconds": 300,
                 "featureNames": FEATURE_NAMES,
                 "pipeline": model,
             }
             joblib.dump(artifact, model_dir / "cpu.joblib")
             manifest_path = model_dir / "manifest.json"
             manifest_path.write_text(
-                json.dumps({"schemaVersion": 1, "models": {
+                json.dumps({"schemaVersion": 2, "models": {
                     "CPU": {"artifact": "cpu.joblib", "model": "XGBoost"}
                 }}),
                 encoding="utf-8",
@@ -84,7 +85,7 @@ class ServiceTests(IsolatedAsyncioTestCase):
                 model_dir / "cpu-invalid-artifact.joblib",
             )
             manifest_path.write_text(
-                json.dumps({"schemaVersion": 1, "models": {
+                json.dumps({"schemaVersion": 2, "models": {
                     "CPU": {
                         "artifact": "cpu-invalid-artifact.joblib",
                         "model": "Invalid",
@@ -106,9 +107,10 @@ class ServiceTests(IsolatedAsyncioTestCase):
             model.fit([[0.0] * len(FEATURE_NAMES)], [63.5])
             joblib.dump(
                 {
-                    "schemaVersion": 1,
+                    "schemaVersion": 2,
                     "component": "CPU",
                     "model": "XGBoost",
+                    "targetHorizonSeconds": 300,
                     "featureNames": FEATURE_NAMES,
                     "pipeline": model,
                 },
@@ -116,7 +118,7 @@ class ServiceTests(IsolatedAsyncioTestCase):
             )
             manifest_path = model_dir / "manifest.json"
             manifest_path.write_text(
-                json.dumps({"schemaVersion": 1, "models": {
+                json.dumps({"schemaVersion": 2, "models": {
                     "CPU": {"artifact": "cpu.joblib", "model": "XGBoost"}
                 }}),
                 encoding="utf-8",
@@ -125,13 +127,13 @@ class ServiceTests(IsolatedAsyncioTestCase):
             self.assertTrue(registry.health()["models"]["CPU"]["available"])
 
             manifest_path.write_text(
-                json.dumps({"schemaVersion": 1, "models": {}}),
+                json.dumps({"schemaVersion": 2, "models": {}}),
                 encoding="utf-8",
             )
             self.assertFalse(registry.health()["models"]["CPU"]["available"])
 
             manifest_path.write_text(
-                json.dumps({"schemaVersion": 1, "models": {
+                json.dumps({"schemaVersion": 2, "models": {
                     "CPU": {"artifact": "cpu.joblib", "model": "XGBoost"}
                 }}),
                 encoding="utf-8",
@@ -161,15 +163,16 @@ class ServiceTests(IsolatedAsyncioTestCase):
             model = DummyRegressor(strategy="constant", constant=63.5)
             model.fit([[0.0] * len(FEATURE_NAMES)], [63.5])
             artifact = {
-                "schemaVersion": 1,
+                "schemaVersion": 2,
                 "component": "CPU",
                 "model": "XGBoost",
+                "targetHorizonSeconds": 300,
                 "featureNames": FEATURE_NAMES,
                 "pipeline": model,
             }
             joblib.dump(artifact, model_dir / "cpu.joblib")
             (model_dir / "manifest.json").write_text(
-                json.dumps({"schemaVersion": 1, "models": {
+                json.dumps({"schemaVersion": 2, "models": {
                     "CPU": {"artifact": "cpu.joblib", "model": "XGBoost"}
                 }}),
                 encoding="utf-8",
@@ -210,16 +213,17 @@ class ServiceTests(IsolatedAsyncioTestCase):
             model.fit([[0.0] * len(FEATURE_NAMES)], [63.5])
             joblib.dump(
                 {
-                    "schemaVersion": 1,
+                    "schemaVersion": 2,
                     "component": "CPU",
                     "model": "XGBoost",
+                    "targetHorizonSeconds": 300,
                     "featureNames": FEATURE_NAMES,
                     "pipeline": model,
                 },
                 model_dir / "cpu.joblib",
             )
             (model_dir / "manifest.json").write_text(
-                json.dumps({"schemaVersion": 1, "models": {
+                json.dumps({"schemaVersion": 2, "models": {
                     "CPU": {"artifact": "cpu.joblib", "model": "XGBoost"}
                 }}),
                 encoding="utf-8",

@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Iterable
 
 MAX_GAP_SECONDS = 20
-TARGET_HORIZON_SECONDS = 10 * 60
+TARGET_HORIZON_SECONDS = 5 * 60
 TARGET_TOLERANCE_SECONDS = 15
 MIN_FEATURE_SPAN_SECONDS = 10
 MAX_TEMPERATURE_C = 150.0
@@ -42,7 +42,12 @@ class TrainingExample:
 
 def discover_csv_files(project_root: Path) -> list[Path]:
     root = project_root.resolve()
-    directories = (root, root / "ThermalCollector", root / "ThermalCollector" / "data")
+    directories = (
+        root,
+        root / "ThermalCollector",
+        root / "ThermalCollector" / "data",
+        root / "ThermalCollector.Tests",
+    )
     found: set[Path] = set()
     for directory in directories:
         if not directory.is_dir():
@@ -129,7 +134,7 @@ def _build_segment_examples(
         ]
         target_index = min(candidates, key=lambda candidate: abs(timestamps[candidate] - target_time), default=-1)
         if target_index < 0 or abs(timestamps[target_index] - target_time) > TARGET_TOLERANCE_SECONDS:
-            rejected["missing_ten_minute_target"] += 1
+            rejected["missing_five_minute_target"] += 1
             continue
 
         history = points[max(0, index - 120) : index + 1]

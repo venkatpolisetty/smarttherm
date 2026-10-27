@@ -222,7 +222,7 @@ function App() {
   useEffect(() => {
     if (warningDemo) {
       const now = new Date();
-      const inTenMinutes = new Date(now.getTime() + 10 * 60 * 1000);
+      const inFiveMinutes = new Date(now.getTime() + 5 * 60 * 1000);
       const scenario = DEMO_SCENARIOS.find((item) => item.id === demoScenario) || DEMO_SCENARIOS[0];
       const threshold = settings?.cpuWarningC ?? 90;
       const cpu = scenario.cpuOffset == null ? scenario.cpu : threshold + scenario.cpuOffset;
@@ -251,7 +251,7 @@ function App() {
           ? "DEMO — CPU temperature sensor is unavailable; no temperature or forecast is being shown."
           : scenario.id === "prediction-unavailable"
             ? "DEMO — CPU prediction is unavailable; current sensor readings are still available."
-            : `DEMO — ${scenario.label}: CPU is ${scenario.trend.toLowerCase()} at ${cpu}°C${predicted == null ? "" : `, with a ${predicted}°C forecast in 10 minutes`}.`,
+            : `DEMO — ${scenario.label}: CPU is ${scenario.trend.toLowerCase()} at ${cpu}°C${predicted == null ? "" : `, with a ${predicted}°C forecast in 5 minutes`}.`,
         suggestedAction: `Demo recommendation: ${scenario.action}`,
       }];
       setStatus({ active: sensorAvailable, message: sensorAvailable ? "Simulated sensor feed" : "Demo sensor unavailable" });
@@ -270,7 +270,7 @@ function App() {
         status: predictionAvailable ? "READY" : "MODEL_UNAVAILABLE",
         model: "Simulated warning demo",
         generatedAt,
-        targetTime: inTenMinutes.toISOString(),
+        targetTime: inFiveMinutes.toISOString(),
         forecasts: [
           { component: "CPU", currentC: currentCpu, predictedC: predicted, status: forecastStatus, model: "Simulated demo value" },
           { component: "GPU", currentC: sensorAvailable ? 44.2 : null, predictedC: sensorAvailable ? 45.1 : null, status: sensorAvailable ? "READY" : "INSUFFICIENT_HISTORY", model: "Simulated demo value" },
@@ -367,7 +367,7 @@ function App() {
   const throttleEstimate = calibrationStatus?.estimatedTemperatureC;
   const forecastChartData = cpuModelReady && cpuForecast?.predictedC != null
     ? [...chartData.map((point, index) => ({ ...point, forecast: index === chartData.length - 1 ? Number(cpuForecast.currentC ?? current?.cpuTemperatureC) : undefined })), {
-      timestamp: new Date(cpuForecast.targetTime || prediction?.targetTime || Date.now() + 10 * 60_000).getTime(),
+      timestamp: new Date(cpuForecast.targetTime || prediction?.targetTime || Date.now() + 5 * 60_000).getTime(),
       forecast: Number(cpuForecast.predictedC), cpu: undefined, gpu: undefined,
     }]
     : chartData;

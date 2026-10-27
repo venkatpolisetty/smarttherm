@@ -14,7 +14,7 @@ from smarttherm_ml.training import (
 def main() -> int:
     default_root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(
-        description="Train and chronologically evaluate SmartTherm ten-minute regressors."
+        description="Train and chronologically evaluate SmartTherm five-minute regressors."
     )
     parser.add_argument("--project-root", type=Path, default=default_root)
     parser.add_argument(

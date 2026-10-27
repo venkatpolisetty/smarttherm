@@ -24,7 +24,7 @@ public class TelemetryService {
     private static final Logger logger = LoggerFactory.getLogger(TelemetryService.class);
     private static final int MAX_HISTORY = 2_000;
     private static final int MAX_ACTIVE_READINGS = 150;
-    private static final Duration ACTIVE_WINDOW = Duration.ofSeconds(600);
+    private static final Duration ACTIVE_WINDOW = Duration.ofSeconds(300);
     private static final Duration FRESHNESS = Duration.ofSeconds(15);
 
     private final ObjectMapper objectMapper;

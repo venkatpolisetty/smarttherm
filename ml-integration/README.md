@@ -2,9 +2,9 @@
 
 ## Current model status
 
-There was no trained model in the workspace. `ThermalCollector\ml_test.py` only prints CSV shape and missing-value counts; it does not train or predict.
+Previously promoted ten-minute artifacts are incompatible with the five-minute model contract and are ignored. `ThermalCollector\ml_test.py` only prints CSV shape and missing-value counts; it does not train or predict.
 
-The existing CSV assessment found 825 parseable sensor rows. CPU training has **0** valid ten-minute targets because nearly all legacy data has no CPU-temperature column. GPU data has 403 apparent real ten-minute pairs, but the leakage-safe chronological/time-block split found only 230 train and 76 test examples and no eligible validation examples after the ten-minute embargo. It is **not trainable/promotable** under the current data gates. Do not interpret old recorded CSV readings as live sensor data.
+Re-run the assessment command below for five-minute label counts. Earlier row and split counts were computed for ten-minute targets and do not describe this model contract. Do not interpret old recorded CSV readings as live sensor data.
 
 Until new data passes the checks below and a validated artifact is trained, SmartTherm reports that the model is not ready and leaves predicted temperatures unavailable. It does not substitute a linear trend or another untrained estimate.
 
@@ -42,13 +42,13 @@ For a machine-readable report:
 & .\ml-integration\.venv\Scripts\python.exe .\ml-integration\assess_data.py --json
 ```
 
-The assessor reports usable ten-minute pairs and the eligible chronological train, validation, and test counts per component using the same 300/50/50 minimums and embargo as training. It normalizes collector CSV column names but does not join separate CSV sessions, invent missing temperatures, or interpolate across gaps. It requires a real later sensor observation approximately 600 seconds after each feature timestamp (within 15 seconds), continuous same-session samples with at most 20 seconds between readings, valid temperature bounds, and enough history for features. CPU and GPU labels are assessed independently.
+The assessor reports usable five-minute pairs and the eligible chronological train, validation, and test counts per component using the same 300/50/50 minimums and embargo as training. It normalizes collector CSV column names but does not join separate CSV sessions, invent missing temperatures, or interpolate across gaps. It requires a real later sensor observation approximately 300 seconds after each feature timestamp (within 15 seconds), continuous same-session samples with at most 20 seconds between readings, valid temperature bounds, and enough history for features. CPU and GPU labels are assessed independently.
 
 ## Train and evaluate
 
 ### Synthetic development data (not live model data)
 
-The supplied CSVs do not have enough real CPU temperature time series to train and validate a ten-minute CPU model. To exercise the feature contract and training code, run:
+The supplied CSVs do not have enough real CPU temperature time series to train and validate a five-minute CPU model. To exercise the feature contract and training code, run:
 
 ```powershell
 & .\ml-integration\.venv\Scripts\python.exe .\ml-integration\generate_synthetic.py
@@ -58,7 +58,7 @@ This writes `ml-integration\synthetic-lab\synthetic_thermal_data.csv`, a separat
 
 The command checks schema, duplicates, missing/invalid parsed rows, five-second intervals, temperature step sizes, feature ranges, and selected load/temperature correlations. It evaluates Gradient Boosting and XGBoost on chronological synthetic splits against persistence, selects by validation RMSE, and reports the untouched test split separately. It saves that research candidate under `synthetic-lab\artifacts\`, with `evaluation.json` beside the CSV. These artifacts are intentionally outside `models\`; they are never loaded by the application or used for live predictions. Synthetic metrics test software behavior only. A real CPU model remains unavailable until sufficient real, continuous CPU-temperature sessions pass the normal assessment and real holdout gates.
 
-The local inference service automatically checks for changed training data at startup and every 15 minutes by default. It runs training in a background worker, independent of five-second sensor collection and prediction. A persisted fingerprint prevents repeatedly training on unchanged CSV files; when collection adds or changes data, the next scheduled check reassesses it. Once the local collector has gathered enough continuous, real CPU or GPU temperature history to form ten-minute targets and chronological train/validation/test partitions, the trainer fits candidates and evaluates them. A candidate replaces that component's model only when it beats persistence on validation and held-out real data and does not regress the active model. The model registry notices a promoted manifest on its next health or prediction request and reloads the artifact. Insufficient data, rejected candidates, and training errors are reported through `GET /health` under `training`; the service continues running and does not fabricate a model or prediction.
+The local inference service automatically checks for changed training data at startup and every 15 minutes by default. It runs training in a background worker, independent of five-second sensor collection and prediction. A persisted fingerprint prevents repeatedly training on unchanged CSV files; when collection adds or changes data, the next scheduled check reassesses it. Once the local collector has gathered enough continuous, real CPU or GPU temperature history to form five-minute targets and chronological train/validation/test partitions, the trainer fits candidates and evaluates them. A candidate replaces that component's model only when it beats persistence on validation and held-out real data and does not regress the active model. The model registry notices a promoted manifest on its next health or prediction request and reloads the artifact. Insufficient data, rejected candidates, and training errors are reported through `GET /health` under `training`; the service continues running and does not fabricate a model or prediction.
 
 Automatic training can be disabled with `SMARTTHERM_AUTO_TRAINING=false`. Set `SMARTTHERM_TRAINING_CHECK_INTERVAL_SECONDS` to change the interval (minimum 60 seconds). Only one training job may use a model directory at a time, including a manual CLI run. The shared training pipeline preserves the existing data requirements and promotion gates.
 
@@ -68,7 +68,7 @@ To assess labels manually, run:
 & .\ml-integration\.venv\Scripts\python.exe .\ml-integration\assess_data.py
 ```
 
-The shared pipeline compares XGBoost and scikit-learn Gradient Boosting against a persistence baseline. It uses lag/window/trend features available at prediction time, median imputers fitted on the training partition only, chronological one-hour session blocks, and a ten-minute embargo between train/validation/test boundaries. It requires at least 300 training examples and 50 validation plus 50 held-out test examples after splitting. A candidate is saved only if it improves on the baseline on both MAE and RMSE on validation and held-out test data, and does not regress the active model on that held-out split. Otherwise the report says `NOT_PROMOTED` or `INSUFFICIENT_DATA`; SmartTherm continues to report no trained prediction rather than substituting an untrained estimate. Do not lower the evidence thresholds to make an underpowered dataset appear trainable.
+The shared pipeline compares direct XGBoost, residual XGBoost, and scikit-learn Gradient Boosting. The residual XGBoost predicts temperature change from the current reading; its correction strength is selected on validation data and applied to persistence. All candidates use lag/window/trend features available at prediction time, median imputers fitted on the training partition only, chronological one-hour session blocks, and a five-minute embargo between train/validation/test boundaries. The trainer requires at least 300 training examples and 50 validation plus 50 held-out test examples after splitting. A candidate is saved only if it improves on the persistence baseline on both MAE and RMSE on validation and held-out test data, and does not regress the active model on that held-out split. After passing those checks, the deployed pipeline is refit on every eligible example collected so far; its recorded metrics remain from the untouched chronological holdouts. Otherwise the report says `NOT_PROMOTED` or `INSUFFICIENT_DATA`; SmartTherm continues to report no trained prediction rather than substituting an untrained estimate. Do not lower the evidence thresholds to make an underpowered dataset appear trainable.
 
 An optional manual run uses the same safeguards:
 
@@ -92,14 +92,14 @@ Endpoints:
 
 - `GET /health`: reports API health, per-component artifact availability, and automatic-training status.
 - `POST /training/check`: queues an immediate background check after the dashboard's **Start calibration** action. It does not bypass the real-data or model-promotion gates.
-- `POST /predict`: accepts up to 150 chronologically ordered, timezone-stamped real readings from the latest 600 seconds. Out-of-range, stale, missing, or gapped inputs are rejected or returned as an explicit unavailable status.
+- `POST /predict`: accepts up to 150 chronologically ordered, timezone-stamped real readings from the latest 300 seconds. Out-of-range, stale, missing, or gapped inputs are rejected or returned as an explicit unavailable status.
 
-The Java API maintains this active 600-second window separately from historical training CSVs, calls `/predict` with bounded timeouts, and validates response freshness, component readings, model metadata, and temperature range. A component forecast is used only for a valid `READY` trained-model result. If Python or a model is unavailable, predicted temperatures remain unavailable; this does not prevent independent sensor collection. Existing configured thresholds, risk state, and alert de-duplication are applied only to available trained predictions.
+The Java API maintains this active 300-second window separately from historical training CSVs, calls `/predict` with bounded timeouts, and validates response freshness, component readings, model metadata, and temperature range. A component forecast is used only for a valid `READY` trained-model result. If Python or a model is unavailable, predicted temperatures remain unavailable; this does not prevent independent sensor collection. Existing configured thresholds, risk state, and alert de-duplication are applied only to available trained predictions.
 
 ## Data contract and evaluation
 
-- Schema version: `1`; timestamps are UTC; temperatures are Celsius; clock speed is MHz; load is percent.
-- Ten-minute target: actual same-component temperature sampled 600 seconds later ±15 seconds in the same continuous session. Gaps over 20 seconds break the segment.
+- Telemetry schema version: `1`; model artifact schema version: `2`; timestamps are UTC; temperatures are Celsius; clock speed is MHz; load is percent.
+- Five-minute target: actual same-component temperature sampled 300 seconds later ±15 seconds in the same continuous session. Gaps over 20 seconds break the segment.
 - Component models train independently. Missing CPU data does not block a GPU assessment; a GPU model is omitted if its sensor/target data is inadequate.
 - Features include current/mean/min/max temperatures, 30/60/300-second trends, CPU/GPU load, CPU clock, and memory utilization when available. Missing feature values are handled by the saved training pipeline.
 - Reports include sample counts and per-component MAE/RMSE; these are not a guarantee of future accuracy.

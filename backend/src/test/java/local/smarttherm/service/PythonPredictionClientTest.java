@@ -23,7 +23,7 @@ class PythonPredictionClientTest {
     @Test
     void acceptsCpuModelWhenGpuModelIsUnavailable() {
         Instant generatedAt = Instant.now();
-        Instant targetTime = generatedAt.plusSeconds(600);
+        Instant targetTime = generatedAt.plusSeconds(300);
         RestClient.Builder builder = RestClient.builder();
         MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
         RestClient restClient = builder.baseUrl("http://127.0.0.1:8090").build();
@@ -63,7 +63,7 @@ class PythonPredictionClientTest {
     @Test
     void rejectsTrainedModelResponseForADifferentCurrentReading() {
         Instant generatedAt = Instant.now();
-        Instant targetTime = generatedAt.plusSeconds(600);
+        Instant targetTime = generatedAt.plusSeconds(300);
         RestClient.Builder builder = RestClient.builder();
         MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
         RestClient restClient = builder.baseUrl("http://127.0.0.1:8090").build();

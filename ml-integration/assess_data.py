@@ -11,7 +11,7 @@ from smarttherm_ml.training import assess_examples
 def main() -> int:
     default_root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(
-        description="Assess SmartTherm collector CSVs for real ten-minute training labels."
+        description="Assess SmartTherm collector CSVs for real five-minute training labels."
     )
     parser.add_argument("--project-root", type=Path, default=default_root)
     parser.add_argument("--json", action="store_true", help="Print a machine-readable report.")
@@ -32,12 +32,12 @@ def main() -> int:
             f"sessions with valid targets: {report['sessionsWithValidTargets']}"
         )
         print("Valid feature readings:", json.dumps(report["featureCoverage"], sort_keys=True))
-        print("A target is a real sample 10 minutes later, within 15 seconds, in a continuous session.")
+        print("A target is a real sample 5 minutes later, within 15 seconds, in a continuous session.")
         for component, details in report["components"].items():
-            count = details["validTenMinutePairs"]
+            count = details["validFiveMinutePairs"]
             split = details["splitCounts"]
             print(
-                f"{component}: {count} usable ten-minute examples; "
+                f"{component}: {count} usable five-minute examples; "
                 f"train={split['train']}, validation={split['validation']}, "
                 f"test={split['test']} ({details['trainingStatus']})"
             )

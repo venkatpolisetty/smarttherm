@@ -15,14 +15,14 @@ import numpy as np
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-from .dataset import MAX_GAP_SECONDS, SensorPoint
+from .dataset import MAX_GAP_SECONDS, TARGET_HORIZON_SECONDS, SensorPoint
 from .features import FEATURE_NAMES, compute_features
 from .auto_training import BackgroundTrainingCoordinator
 
 logger = logging.getLogger("smarttherm.ml")
 MAX_READINGS = 150
 MAX_READING_AGE = timedelta(seconds=15)
-PREDICTION_HORIZON = timedelta(minutes=10)
+PREDICTION_HORIZON = timedelta(seconds=TARGET_HORIZON_SECONDS)
 MAX_TEMPERATURE_C = 150
 MODEL_DIR = Path(
     os.environ.get(
@@ -168,7 +168,8 @@ class ModelRegistry:
                 continue
             if (
                 not isinstance(artifact, dict)
-                or artifact.get("schemaVersion") != 1
+                or artifact.get("schemaVersion") != 2
+                or artifact.get("targetHorizonSeconds") != TARGET_HORIZON_SECONDS
                 or artifact.get("component") != component
                 or artifact.get("featureNames") != FEATURE_NAMES
                 or not hasattr(artifact.get("pipeline"), "predict")

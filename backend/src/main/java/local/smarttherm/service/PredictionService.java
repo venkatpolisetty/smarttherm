@@ -13,7 +13,7 @@ import java.util.Optional;
 @Service
 public class PredictionService {
     public static final String MODEL = "Validated trained model prediction";
-    private static final Duration HORIZON = Duration.ofMinutes(10);
+    private static final Duration HORIZON = Duration.ofMinutes(5);
     private static final Duration MAX_AGE = Duration.ofSeconds(15);
     private final PythonPredictionClient pythonPredictionClient;
     private volatile PredictionSnapshot latest = waitingForData();
